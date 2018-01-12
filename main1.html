@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html class="js html css_verticalspacer" lang="ru-RU"><head>
+
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+  <meta name="generator" content="2018.0.0.379">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript">
+   // Redirect to phone/tablet as necessary
+(function(a,b,c){var d=function(){if(navigator.maxTouchPoints>1)return!0;if(window.matchMedia&&window.matchMedia("(-moz-touch-enabled)").matches)return!0;for(var a=["Webkit","Moz","O","ms","Khtml"],b=0,c=a.length;b<c;b++){var f=a[b]+"MaxTouchPoints";if(f in navigator&&navigator[f])return!0}try{return document.createEvent("TouchEvent"),!0}catch(d){}return!1}(),g=function(a){a+="=";for(var b=document.cookie.split(";"),c=0;c<b.length;c++){for(var f=b[c];f.charAt(0)==" ";)f=f.substring(1,f.length);if(f.indexOf(a)==
+0)return f.substring(a.length,f.length)}return null};if(g("inbrowserediting")!="true"){var f,g=g("devicelock");g=="phone"&&c?f=c:g=="tablet"&&b&&(f=b);if(g!=a&&!f)if(window.matchMedia)window.matchMedia("(max-device-width: 415px)").matches&&c?f=c:window.matchMedia("(max-device-width: 960px)").matches&&b&&d&&(f=b);else{var a=Math.min(screen.width,screen.height)/(window.devicePixelRatio||1),g=window.screen.systemXDPI||0,i=window.screen.systemYDPI||0,g=g>0&&i>0?Math.min(screen.width/g,screen.height/i):
+0;(a<=370||g!=0&&g<=3)&&c?f=c:a<=960&&b&&d&&(f=b)}if(f)document.location=f+(document.location.search||"")+(document.location.hash||""),document.write('<style type="text/css">body {visibility:hidden}</style>')}})("desktop","","phone/index.html");
+
+// Update the 'nojs'/'js' class on the html node
+document.documentElement.className = document.documentElement.className.replace(/\bnojs\b/g, 'js');
+
+// Check that all required assets are uploaded and up-to-date
+if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["museutils.js", "museconfig.js", "jquery.watch.js", "require.js", "index.css"], "outOfDate":[]};
+</script>
+  
+  <link media="only screen and (max-width: 370px)" rel="alternate" href="http://vrtech.global/phone/index.html">
+  <link rel="shortcut icon" href="images/favicon.ico?crc=4211730082">
+  <title>Virtual reality for business | VRTech</title>
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="css/site_global.css?crc=4278437860">
+  <link rel="stylesheet" type="text/css" href="css/master_rus.css?crc=135194508">
+  <link rel="stylesheet" type="text/css" href="css/index.css?crc=4062642090" id="pagesheet">
+    <!--custom head HTML-->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-79386728-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter44808514 = new Ya.Metrika({
+                    id:44808514,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript>&lt;div&gt;&lt;img src="https://mc.yandex.ru/watch/44808514" style="position:absolute; left:-9999px;" alt="" /&gt;&lt;/div&gt;</noscript>
+<!-- /Yandex.Metrika counter -->
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/evil-icons/1.9.0/evil-icons.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+
+<script src="https://cdn.jsdelivr.net/evil-icons/1.9.0/evil-icons.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width">
+
+
+<style>
+
+#language-in-menu {
+  cursor: pointer;
+  font-family: 'Roboto';
+  font-weight: 300;
+  color: #999;
+  font-size: 25px;
+}
+
+#menu {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 400px;
+  background: white;
+  display: none;
+  z-index: 100;
+}
+
+#closeAndLang {
+  display: flex;
+  align-items: center;
+}
+
+#navBar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 25px;
+  width: 100vw;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+}
+
+.icon.icon--ei-navicon.icon--m  {
+  cursor: pointer;
+  margin: 25px;
+  color: white;
+}
+
+.icon {
+  cursor: pointer;
+  margin: 25px;
+  color: #999;
+}
+
+#menuBurger {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+#menuScreen {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  opacity: 0.3;
+  display: none;
+}
+.menu_container {
+    display: table;
+    margin: 0 auto;
+    height: 400px;
+    padding-top: 50px;
+    min-width: 1150px;
+}
+.top_menu_item {
+    width: 151px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 20px;
+    align-items: center;
+}
+.top_menu_logo:link, 
+.top_menu_logo:hover, 
+.top_menu_logo:visited, 
+.top_menu_logo:focus, 
+.top_menu_logo:active {
+  margin-bottom:5px;
+  line-height: 19px;
+  font-size: 16px;
+  font-family: '__Roboto_5';
+  font-weight: 700;
+  text-decoration: none;
+  color: #333333;
+  height: 40px;
+}
+.top_menu_poster{
+  margin-bottom:5px;
+}
+.top_menu_text:link, 
+.top_menu_text:hover, 
+.top_menu_text:visited,
+.top_menu_text:focus,
+.top_menu_text:active {
+    color: #333333;
+    line-height: 17px;
+    font-size: 12px;
+    font-family: '__Roboto_5';
+    font-weight: 400;
+    text-decoration: none;
+}
+.top_menu_arrow_icon{
+  width:100%;
+  margin-top:10px;
+}
+</style>
+<meta name="viewport" content="width=device-width">
+<style type="text/css">
+.videoContainer 
+{
+
+    position:absolute;
+    height:480px;
+    width:100%;
+    display:flex;
+  align-items:center;
+    overflow: hidden;
+}
+
+.videoContainer video 
+{
+    min-width: 100%;
+    min-height: 100%;
+    object-fit:cover;
+}
+
+
+.news_more_button {
+  z-index: 228;
+  margin-top: 68px;
+  width: 100%;
+}
+
+#news_more_button_container:hover {
+  background-color: #e8e8e8;
+}
+
+.news_more_button_container {
+    cursor: pointer;
+    z-index: 230;
+    width: 779px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #d1d1d1;
+    background-color: transparent;
+    margin-bottom: -1px;
+    position: relative;
+}
+
+.news_more_button_title {
+    z-index: 231;
+    color: #999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-family: '__Roboto_5',sans-serif;
+    font-weight: 100;
+}
+
+.news_line {
+    z-index: 226;
+    width: 779px;
+    height: 1px;
+    background-color: #e6e6e6;
+    margin-top: 38px;
+    position: relative;
+}
+
+.news_news {
+z-index: 178;
+width: 110px;
+min-height: 26px;
+background-color: transparent;
+color: #333333;
+text-align: center;
+font-size: 16px;
+line-height: 19px;
+font-family: '__Roboto_5';
+font-weight: 700;
+margin-top: 85px;
+position: relative;
+margin-left: 50%;
+left: -55px;
+}
+
+.news_title {
+    z-index: 194;
+    width: 779px;
+    min-height: 50px;
+    background-color: transparent;
+    color: #333333;
+    line-height: 36px;
+    font-size: 24px;
+    font-family: '__Roboto_5', sans-serif;
+    font-weight: 200;
+    margin-top: 22px;
+    position: relative;
+}
+
+.news_date {
+    z-index: 194;
+    width: 779px;
+    background-color: transparent;
+    color: #333333;
+    font-size: 16px;
+    font-family: '__Roboto_5', sans-serif;
+    font-weight: 500;
+    margin-top: 10px;
+    position: relative;
+}
+
+.news_img {
+  object-fit: cover;
+  z-index: 218;
+  width: 779px;
+  height: 219px;
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  margin-top: 12px;
+  position: relative;
+}
+
+.news_video {
+  margin-top: 12px;
+  position: relative;
+}
+
+.news_short_description {
+    z-index: 206;
+    width: 779px;
+    min-height: 50px;
+    background-color: transparent;
+    color: #999999;
+    line-height: 24px;
+    font-size: 16px;
+    font-family: '__Roboto_5', sans-serif;
+    font-weight: 200;
+    margin-top: 20px;
+    position: relative;
+    text-align: justify;
+}
+
+.news_more_button_title .icon {
+  margin: 10px;
+} 
+
+
+</style>
+  <!--/*
+
+*/
+-->
+ <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="scripts/museconfig.js?crc=4153641093" src="scripts/museconfig.js?crc=4153641093"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery" src="http://musecdn2.businesscatalyst.com/scripts/4.0/jquery-1.8.3.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="museutils" src="scripts/museutils.js?crc=388970469"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="whatinput" src="scripts/whatinput.js?crc=86476730"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery.watch" src="scripts/jquery.watch.js?crc=399457859"></script></head>
+ <body class="initialized" data-whatinput="mouse"> 
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="ei-sprite" style="display:none">
+  <symbol id="ei-archive-icon" viewBox="0 0 50 50">
+    <path d="M42 20h-2v-5c0-.6-.4-1-1-1H11c-.6 0-1 .4-1 1v5H8v-5c0-1.7 1.3-3 3-3h28c1.7 0 3 1.3 3 3v5z">
+    </path><path d="M37 40H13c-1.7 0-3-1.3-3-3V20h2v17c0 .6.4 1 1 1h24c.6 0 1-.4 1-1V20h2v17c0 1.7-1.3 3-3 3z">
+    </path><path d="M29 26h-8c-.6 0-1-.4-1-1s.4-1 1-1h8c.6 0 1 .4 1 1s-.4 1-1 1z">
+    </path><path d="M8 18h34v2H8z">
+    </path>
+  </symbol>
+  <symbol id="ei-arrow-down-icon" viewBox="0 0 50 50">
+    <path d="M25 42c-9.4 0-17-7.6-17-17S15.6 8 25 8s17 7.6 17 17-7.6 17-17 17zm0-32c-8.3 0-15 6.7-15 15s6.7 15 15 15 15-6.7 15-15-6.7-15-15-15z">
+    </path>
+    <path d="M25 34.4l-9.7-9.7 1.4-1.4 8.3 8.3 8.3-8.3 1.4 1.4z">
+    </path>
+    <path d="M24 16h2v17h-2z"></path>
+  </symbol>
+  <symbol id="ei-arrow-left-icon" viewBox="0 0 50 50">
+    <path d="M25 42c-9.4 0-17-7.6-17-17S15.6 8 25 8s17 7.6 17 17-7.6 17-17 17zm0-32c-8.3 0-15 6.7-15 15s6.7 15 15 15 15-6.7 15-15-6.7-15-15-15z">
+    </path>
+    <path d="M25.3 34.7L15.6 25l9.7-9.7 1.4 1.4-8.3 8.3 8.3 8.3z">
+    </path><path d="M17 24h17v2H17z">
+    </path>
+  </symbol>
+  <symbol id="ei-arrow-right-icon" viewBox="0 0 50 50">
+    <path d="M25 42c-9.4 0-17-7.6-17-17S15.6 8 25 8s17 7.6 17 17-7.6 17-17 17zm0-32c-8.3 0-15 6.7-15 15s6.7 15 15 15 15-6.7 15-15-6.7-15-15-15z">
+    </path>
+    <path d="M24.7 34.7l-1.4-1.4 8.3-8.3-8.3-8.3 1.4-1.4 9.7 9.7z">
+    </path>
+    <path d="M16 24h17v2H16z">
+    </path>
+  </symbol>
+  <symbol id="ei-arrow-up-icon" viewBox="0 0 50 50">
+    <path d="M25 42c-9.4 0-17-7.6-17-17S15.6 8 25 8s17 7.6 17 17-7.6 17-17 17zm0-32c-8.3 0-15 6.7-15 15s6.7 15 15 15 15-6.7 15-15-6.7-15-15-15z">
+    </path>
+    <path d="M33.3 26.7L25 18.4l-8.3 8.3-1.4-1.4 9.7-9.7 9.7 9.7z">
+    </path>
+    <path d="M24 17h2v17h-2z">
+    </path>
+  </symbol>
+  <symbol id="ei-bell-icon" viewBox="0 0 50 50">
+    <path d="M42 36c-6.5 0-7.4-6.3-8.2-11.9C32.9 17.9 32.1 12 25 12s-7.9 5.9-8.8 12.1C15.4 29.7 14.5 36 8 36v-2c4.6 0 5.3-3.9 6.2-10.1.9-6.2 2-13.9 10.8-13.9s9.9 7.7 10.8 13.9C36.7 30.1 37.4 34 42 34v2z">
+    </path>
+    <path d="M25 40c-2.8 0-5-2.2-5-5h2c0 1.7 1.3 3 3 3s3-1.3 3-3h2c0 2.8-2.2 5-5 5z">
+    </path>
+    <path d="M8 34h34v2H8z">
+    </path>
+    <path d="M27 10c0 1.1-.9 1.5-2 1.5s-2-.4-2-1.5.9-2 2-2 2 .9 2 2z">
+    </path>
+  </symbol>
+  <symbol id="ei-calendar-icon" viewBox="0 0 50 50">
+    <path d="M37 38H13c-1.7 0-3-1.3-3-3V13c0-1.7 1.1-3 2.5-3H14v2h-1.5c-.2 0-.5.4-.5 1v22c0 .6.4 1 1 1h24c.6 0 1-.4 1-1V13c0-.6-.3-1-.5-1H36v-2h1.5c1.4 0 2.5 1.3 2.5 3v22c0 1.7-1.3 3-3 3z">
+    </path>
+    <path d="M17 14c-.6 0-1-.4-1-1V9c0-.6.4-1 1-1s1 .4 1 1v4c0 .6-.4 1-1 1z">
+    </path>
+    <path d="M33 14c-.6 0-1-.4-1-1V9c0-.6.4-1 1-1s1 .4 1 1v4c0 .6-.4 1-1 1z">
+    </path>
+    <path d="M20 10h10v2H20z">
+    </path>
+    <path d="M12 16h26v2H12z">
+    </path>
+    <path d="M34 20h2v2h-2z">
+    </path>
+    <path d="M30 20h2v2h-2z">
+    </path>
+    <path d="M26 20h2v2h-2z">
+    </path>
+    <path d="M22 20h2v2h-2z">
+    </path>
+    <path d="M18 20h2v2h-2z">
+    </path>
+    <path d="M34 24h2v2h-2z">
+    </path>
+    <path d="M30 24h2v2h-2z">
+    </path>
+    <path d="M26 24h2v2h-2z">
+    </path>
+    <path d="M22 24h2v2h-2z">
+    </path>
+    <path d="M18 24h2v2h-2z">
+    </path>
+    <path d="M14 24h2v2h-2z">
+    </path>
+    <path d="M34 28h2v2h-2z">
+    </path>
+    <path d="M30 28h2v2h-2z">
+    </path>
+    <path d="M26 28h2v2h-2z">
+    </path>
+    <path d="M22 28h2v2h-2z">
+    </path>
+    <path d="M18 28h2v2h-2z">
+    </path>
+    <path d="M14 28h2v2h-2z">
+    </path>
+    <path d="M30 32h2v2h-2z">
+    </path>
+    <path d="M26 32h2v2h-2z">
+    </path>
+    <path d="M22 32h2v2h-2z">
+    </path>
+    <path d="M18 32h2v2h-2z">
+    </path>
+    <path d="M14 32h2v2h-2z">
+    </path>
+  </symbol>
+  <symbol id="ei-camera-icon" viewBox="0 0 50 50">
+    <path d="M39 38H11c-1.7 0-3-1.3-3-3V17c0-1.7 1.3-3 3-3h6c.2 0 .5-.2.6-.3l1.1-2.2c.4-.8 1.4-1.4 2.3-1.4h8c.9 0 1.9.6 2.3 1.4l1.1 2.2c.1.2.4.3.6.3h6c1.7 0 3 1.3 3 3v18c0 1.7-1.3 3-3 3zM11 16c-.6 0-1 .4-1 1v18c0 .6.4 1 1 1h28c.6 0 1-.4 1-1V17c0-.6-.4-1-1-1h-6c-.9 0-1.9-.6-2.3-1.4l-1.1-2.2c-.1-.2-.4-.4-.6-.4h-8c-.2 0-.5.2-.6.3l-1.1 2.2c-.4.9-1.4 1.5-2.3 1.5h-6z">
+    </path>
+    <path d="M25 34c-5 0-9-4-9-9s4-9 9-9 9 4 9 9-4 9-9 9zm0-16c-3.9 0-7 3.1-7 7s3.1 7 7 7 7-3.1 7-7-3.1-7-7-7z">  
+    </path>
+    <circle cx="35" cy="18" r="1">
+    </circle>
+    <path d="M12 12h4v1h-4z">
+    </path>
+    <path d="M25 21v-1c-2.8 0-5 2.2-5 5h1c0-2.2 1.8-4 4-4z">
+    </path>
+  </symbol>
+  <symbol id="ei-cart-icon" viewBox="0 0 50 50">
+    <path d="M35 34H13c-.3 0-.6-.2-.8-.4s-.2-.6-.1-.9l1.9-4.8L12.1 10H6V8h7c.5 0 .9.4 1 .9l2 19c0 .2 0 .3-.1.5L14.5 32H36l-1 2z">
+    </path>
+    <path d="M15.2 29l-.4-2L38 22.2V14H14v-2h25c.6 0 1 .4 1 1v10c0 .5-.3.9-.8 1l-24 5z">
+    </path>
+    <path d="M36 40c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4zm0-6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z">
+    </path>
+    <path d="M12 40c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4zm0-6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z">
+    </path>
+  </symbol>
+  <symbol id="ei-chart-icon" viewBox="0 0 50 50">
+    <path d="M18 36h-2V26h-4v10h-2V24h8z">
+    </path>
+    <path d="M28 36h-2V20h-4v16h-2V18h8z">
+    </path>
+    <path d="M38 36h-2V14h-4v22h-2V12h8z">
+    </path>
+    <path d="M8 36h32v2H8z">
+    </path>
+  </symbol>
+  <symbol id="ei-check-icon" viewBox="0 0 50 50">
+    <path d="M25 42c-9.4 0-17-7.6-17-17S15.6 8 25 8s17 7.6 17 17-7.6 17-17 17zm0-32c-8.3 0-15 6.7-15 15s6.7 15 15 15 15-6.7 15-15-6.7-15-15-15z">
+    </path>
+    <path d="M23 32.4l-8.7-8.7 1.4-1.4 7.3 7.3 11.3-11.3 1.4 1.4z">
+    </path>
+  </symbol>
+  <symbol id="ei-chevron-down-icon" viewBox="0 0 50 50">
+    <path d="M25 32.4l-9.7-9.7 1.4-1.4 8.3 8.3 8.3-8.3 1.4 1.4z">
+    </path>
+  </symbol>
+  <symbol id="ei-chevron-left-icon" viewBox="0 0 50 50">
+    <path d="M27.3 34.7L17.6 25l9.7-9.7 1.4 1.4-8.3 8.3 8.3 8.3z">
+    </path>
+  </symbol>
+  <symbol id="ei-chevron-right-icon" viewBox="0 0 50 50">
+    <path d="M22.7 34.7l-1.4-1.4 8.3-8.3-8.3-8.3 1.4-1.4 9.7 9.7z">
+    </path>
+  </symbol>
+  <symbol id="ei-chevron-up-icon" viewBox="0 0 50 50">
+    <path d="M33.3 28.7L25 20.4l-8.3 8.3-1.4-1.4 9.7-9.7 9.7 9.7z">
+    </path>
+  </symbol>
+  <symbol id="ei-clock-icon" viewBox="0 0 50 50">
+    <path d="M25 42c-9.4 0-17-7.6-17-17S15.6 8 25 8s17 7.6 17 17-7.6 17-17 17zm0-32c-8.3 0-15 6.7-15 15s6.7 15 15 15 15-6.7 15-15-6.7-15-15-15z">
+    </path>
+    <path d="M30.3 33.7L24 27.4V16h2v10.6l5.7 5.7z">
+    </path>
+  </symbol>
+  <symbol id="ei-close-o-icon" viewBox="0 0 50 50">
+    <path d="M25 42c-9.4 0-17-7.6-17-17S15.6 8 25 8s17 7.6 17 17-7.6 17-17 17zm0-32c-8.3 0-15 6.7-15 15s6.7 15 15 15 15-6.7 15-15-6.7-15-15-15z">
+    </path>
+    <path d="M32.283 16.302l1.414 1.415-15.98 15.98-1.414-1.414z">
+    </path>
+    <path d="M17.717 16.302l15.98 15.98-1.414 1.415-15.98-15.98z">
+    </path>
+  </symbol><symbol id="ei-close-icon" viewBox="0 0 50 50"><path d="M37.304 11.282l1.414 1.414-26.022 26.02-1.414-1.413z"></path><path d="M12.696 11.282l26.022 26.02-1.414 1.415-26.022-26.02z"></path></symbol><symbol id="ei-comment-icon" viewBox="0 0 50 50"><path d="M15 42h-2l1.2-1.6c.8-1.1 1.3-2.5 1.6-4.2C10.8 33.9 8 29.6 8 24c0-8.6 6.5-14 17-14s17 5.4 17 14c0 8.8-6.4 14-17 14h-.7c-1.6 1.9-4.4 4-9.3 4zm10-30c-9.4 0-15 4.5-15 12 0 6.4 3.9 9.4 7.2 10.7l.7.3-.1.8c-.2 1.6-.5 3-1.1 4.2 3.3-.4 5.2-2.1 6.3-3.5l.3-.4H25c13.5 0 15-8.4 15-12C40 16.5 34.4 12 25 12z"></path></symbol><symbol id="ei-credit-card-icon" viewBox="0 0 50 50"><path d="M39 38H11c-1.7 0-3-1.3-3-3V15c0-1.7 1.3-3 3-3h28c1.7 0 3 1.3 3 3v20c0 1.7-1.3 3-3 3zM11 14c-.6 0-1 .4-1 1v20c0 .6.4 1 1 1h28c.6 0 1-.4 1-1V15c0-.6-.4-1-1-1H11z"></path><path d="M9 16h32v6H9z"></path><path d="M12 26h1v2h-1z"></path><path d="M14 26h1v2h-1z"></path><path d="M16 26h1v2h-1z"></path><path d="M19 26h1v2h-1z"></path><path d="M21 26h1v2h-1z"></path><path d="M23 26h1v2h-1z"></path><path d="M26 26h1v2h-1z"></path><path d="M28 26h1v2h-1z"></path><path d="M30 26h1v2h-1z"></path><path d="M33 26h1v2h-1z"></path><path d="M35 26h1v2h-1z"></path><path d="M37 26h1v2h-1z"></path></symbol><symbol id="ei-envelope-icon" viewBox="0 0 50 50"><path opacity=".9" d="M31.796 24.244l9.97 9.97-1.415 1.414-9.97-9.97z"></path><path opacity=".9" d="M18.278 24.287l1.414 1.414-9.9 9.9-1.414-1.41z"></path><path d="M25 29.9c-1.5 0-3.1-.6-4.2-1.8L8.3 15.7l1.4-1.4 12.5 12.5c1.6 1.6 4.1 1.6 5.7 0l12.5-12.5 1.4 1.4-12.6 12.5c-1.1 1.1-2.7 1.7-4.2 1.7z"></path><path d="M39 38H11c-1.7 0-3-1.3-3-3V15c0-1.7 1.3-3 3-3h28c1.7 0 3 1.3 3 3v20c0 1.7-1.3 3-3 3zM11 14c-.6 0-1 .4-1 1v20c0 .6.4 1 1 1h28c.6 0 1-.4 1-1V15c0-.6-.4-1-1-1H11z"></path></symbol><symbol id="ei-exclamation-icon" viewBox="0 0 50 50"><path d="M25 42c-9.4 0-17-7.6-17-17S15.6 8 25 8s17 7.6 17 17-7.6 17-17 17zm0-32c-8.3 0-15 6.7-15 15s6.7 15 15 15 15-6.7 15-15-6.7-15-15-15z"></path><path d="M24 32h2v2h-2z"></path><path d="M25.6 30h-1.2l-.4-8v-6h2v6z"></path></symbol><symbol id="ei-external-link-icon" viewBox="0 0 50 50"><path d="M38.288 10.297l1.414 1.415-14.99 14.99-1.414-1.414z"></path><path d="M40 20h-2v-8h-8v-2h10z"></path><path d="M35 38H15c-1.7 0-3-1.3-3-3V15c0-1.7 1.3-3 3-3h11v2H15c-.6 0-1 .4-1 1v20c0 .6.4 1 1 1h20c.6 0 1-.4 1-1V24h2v11c0 1.7-1.3 3-3 3z"></path></symbol><symbol id="ei-eye-icon" viewBox="0 0 50 50"><path d="M25 36C13.5 36 8.3 25.9 8.1 25.4c-.1-.3-.1-.6 0-.9C8.3 24.1 13.5 14 25 14s16.7 10.1 16.9 10.6c.1.3.1.6 0 .9-.2.4-5.4 10.5-16.9 10.5zM10.1 25c1.1 1.9 5.9 9 14.9 9s13.7-7.1 14.9-9c-1.1-1.9-5.9-9-14.9-9s-13.7 7.1-14.9 9z"></path><path d="M25 34c-5 0-9-4-9-9s4-9 9-9 9 4 9 9-4 9-9 9zm0-16c-3.9 0-7 3.1-7 7s3.1 7 7 7 7-3.1 7-7-3.1-7-7-7z"></path><path d="M25 30c-2.8 0-5-2.2-5-5 0-.6.4-1 1-1s1 .4 1 1c0 1.7 1.3 3 3 3s3-1.3 3-3-1.3-3-3-3c-.6 0-1-.4-1-1s.4-1 1-1c2.8 0 5 2.2 5 5s-2.2 5-5 5z"></path></symbol><symbol id="ei-gear-icon" viewBox="0 0 50 50"><path d="M25 34c-5 0-9-4-9-9s4-9 9-9 9 4 9 9-4 9-9 9zm0-16c-3.9 0-7 3.1-7 7s3.1 7 7 7 7-3.1 7-7-3.1-7-7-7z"></path><path d="M27.7 44h-5.4l-1.5-4.6c-1-.3-2-.7-2.9-1.2l-4.4 2.2-3.8-3.8 2.2-4.4c-.5-.9-.9-1.9-1.2-2.9L6 27.7v-5.4l4.6-1.5c.3-1 .7-2 1.2-2.9l-2.2-4.4 3.8-3.8 4.4 2.2c.9-.5 1.9-.9 2.9-1.2L22.3 6h5.4l1.5 4.6c1 .3 2 .7 2.9 1.2l4.4-2.2 3.8 3.8-2.2 4.4c.5.9.9 1.9 1.2 2.9l4.6 1.5v5.4l-4.6 1.5c-.3 1-.7 2-1.2 2.9l2.2 4.4-3.8 3.8-4.4-2.2c-.9.5-1.9.9-2.9 1.2L27.7 44zm-4-2h2.6l1.4-4.3.5-.1c1.2-.3 2.3-.8 3.4-1.4l.5-.3 4 2 1.8-1.8-2-4 .3-.5c.6-1 1.1-2.2 1.4-3.4l.1-.5 4.3-1.4v-2.6l-4.3-1.4-.1-.5c-.3-1.2-.8-2.3-1.4-3.4l-.3-.5 2-4-1.8-1.8-4 2-.5-.3c-1.1-.6-2.2-1.1-3.4-1.4l-.5-.1L26.3 8h-2.6l-1.4 4.3-.5.1c-1.2.3-2.3.8-3.4 1.4l-.5.3-4-2-1.8 1.8 2 4-.3.5c-.6 1-1.1 2.2-1.4 3.4l-.1.5L8 23.7v2.6l4.3 1.4.1.5c.3 1.2.8 2.3 1.4 3.4l.3.5-2 4 1.8 1.8 4-2 .5.3c1.1.6 2.2 1.1 3.4 1.4l.5.1 1.4 4.3z"></path></symbol><symbol id="ei-heart-icon" viewBox="0 0 50 50"><path d="M25 39.7l-.6-.5C11.5 28.7 8 25 8 19c0-5 4-9 9-9 4.1 0 6.4 2.3 8 4.1 1.6-1.8 3.9-4.1 8-4.1 5 0 9 4 9 9 0 6-3.5 9.7-16.4 20.2l-.6.5zM17 12c-3.9 0-7 3.1-7 7 0 5.1 3.2 8.5 15 18.1 11.8-9.6 15-13 15-18.1 0-3.9-3.1-7-7-7-3.5 0-5.4 2.1-6.9 3.8L25 17.1l-1.1-1.3C22.4 14.1 20.5 12 17 12z"></path></symbol><symbol id="ei-image-icon" viewBox="0 0 50 50"><path d="M39 38H11c-1.7 0-3-1.3-3-3V15c0-1.7 1.3-3 3-3h28c1.7 0 3 1.3 3 3v20c0 1.7-1.3 3-3 3zM11 14c-.6 0-1 .4-1 1v20c0 .6.4 1 1 1h28c.6 0 1-.4 1-1V15c0-.6-.4-1-1-1H11z"></path><path d="M30 24c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4zm0-6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path><path d="M35.3 37.7L19 22.4 9.7 31l-1.4-1.4 10.7-10 17.7 16.7z"></path><path d="M40.4 32.7L35 28.3 30.5 32l-1.3-1.6 5.8-4.7 6.6 5.4z"></path></symbol><symbol id="ei-like-icon" viewBox="0 0 50 50"><path d="M40 23.2c0-2.1-1.7-3.2-4-3.2h-6.7c.5-1.8.7-3.5.7-5 0-5.8-1.6-7-3-7-.9 0-1.6.1-2.5.6-.3.2-.4.4-.5.7l-1 5.4c-1.1 2.8-3.8 5.3-6 7V36c.8 0 1.6.4 2.6.9 1.1.5 2.2 1.1 3.4 1.1h9.5c2 0 3.5-1.6 3.5-3 0-.3 0-.5-.1-.7 1.2-.5 2.1-1.5 2.1-2.8 0-.6-.1-1.1-.3-1.6.8-.5 1.5-1.4 1.5-2.4 0-.6-.3-1.2-.6-1.7.8-.6 1.4-1.6 1.4-2.6zm-2.1 0c0 1.3-1.3 1.4-1.5 2-.2.7.8.9.8 2.1 0 1.2-1.5 1.2-1.7 1.9-.2.8.5 1 .5 2.2v.2c-.2 1-1.7 1.1-2 1.5-.3.5 0 .7 0 1.8 0 .6-.7 1-1.5 1H23c-.8 0-1.6-.4-2.6-.9-.8-.4-1.6-.8-2.4-1V23.5c2.5-1.9 5.7-4.7 6.9-8.2v-.2l.9-5c.4-.1.7-.1 1.2-.1.2 0 1 1.2 1 5 0 1.5-.3 3.1-.8 5H27c-.6 0-1 .4-1 1s.4 1 1 1h9c1 0 1.9.5 1.9 1.2z"></path><path d="M16 38h-6c-1.1 0-2-.9-2-2V22c0-1.1.9-2 2-2h6c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2zm-6-16v14h6V22h-6z"></path></symbol><symbol id="ei-link-icon" viewBox="0 0 50 50"><path d="M24 30.2c0 .2.1.5.1.8 0 1.4-.5 2.6-1.5 3.6l-2 2c-1 1-2.2 1.5-3.6 1.5-2.8 0-5.1-2.3-5.1-5.1 0-1.4.5-2.6 1.5-3.6l2-2c1-1 2.2-1.5 3.6-1.5.3 0 .5 0 .8.1l1.5-1.5c-.7-.3-1.5-.4-2.3-.4-1.9 0-3.6.7-4.9 2l-2 2c-1.3 1.3-2 3-2 4.9 0 3.8 3.1 6.9 6.9 6.9 1.9 0 3.6-.7 4.9-2l2-2c1.3-1.3 2-3 2-4.9 0-.8-.1-1.6-.4-2.3L24 30.2z"></path><path d="M33 10.1c-1.9 0-3.6.7-4.9 2l-2 2c-1.3 1.3-2 3-2 4.9 0 .8.1 1.6.4 2.3l1.5-1.5c0-.2-.1-.5-.1-.8 0-1.4.5-2.6 1.5-3.6l2-2c1-1 2.2-1.5 3.6-1.5 2.8 0 5.1 2.3 5.1 5.1 0 1.4-.5 2.6-1.5 3.6l-2 2c-1 1-2.2 1.5-3.6 1.5-.3 0-.5 0-.8-.1l-1.5 1.5c.7.3 1.5.4 2.3.4 1.9 0 3.6-.7 4.9-2l2-2c1.3-1.3 2-3 2-4.9 0-3.8-3.1-6.9-6.9-6.9z"></path><path d="M20 31c-.3 0-.5-.1-.7-.3-.4-.4-.4-1 0-1.4l10-10c.4-.4 1-.4 1.4 0s.4 1 0 1.4l-10 10c-.2.2-.4.3-.7.3z"></path></symbol><symbol id="ei-location-icon" viewBox="0 0 50 50"><path d="M25 42.5l-.8-.9C23.7 41.1 12 27.3 12 19c0-7.2 5.8-13 13-13s13 5.8 13 13c0 8.3-11.7 22.1-12.2 22.7l-.8.8zM25 8c-6.1 0-11 4.9-11 11 0 6.4 8.4 17.2 11 20.4 2.6-3.2 11-14 11-20.4 0-6.1-4.9-11-11-11z"></path><path d="M25 24c-2.8 0-5-2.2-5-5s2.2-5 5-5 5 2.2 5 5-2.2 5-5 5zm0-8c-1.7 0-3 1.3-3 3s1.3 3 3 3 3-1.3 3-3-1.3-3-3-3z"></path></symbol><symbol id="ei-lock-icon" viewBox="0 0 50 50"><path d="M34 23h-2v-4c0-3.9-3.1-7-7-7s-7 3.1-7 7v4h-2v-4c0-5 4-9 9-9s9 4 9 9v4z"></path><path d="M33 40H17c-1.7 0-3-1.3-3-3V25c0-1.7 1.3-3 3-3h16c1.7 0 3 1.3 3 3v12c0 1.7-1.3 3-3 3zM17 24c-.6 0-1 .4-1 1v12c0 .6.4 1 1 1h16c.6 0 1-.4 1-1V25c0-.6-.4-1-1-1H17z"></path><circle cx="25" cy="28" r="2"></circle><path d="M25.5 28h-1l-1 6h3z"></path></symbol><symbol id="ei-minus-icon" viewBox="0 0 50 50"><path d="M25 42c-9.4 0-17-7.6-17-17S15.6 8 25 8s17 7.6 17 17-7.6 17-17 17zm0-32c-8.3 0-15 6.7-15 15s6.7 15 15 15 15-6.7 15-15-6.7-15-15-15z"></path><path d="M16 24h18v2H16z"></path></symbol><symbol id="ei-navicon-icon" viewBox="0 0 50 50"><path d="M10 12h30v4H10z"></path><path d="M10 22h30v4H10z"></path><path d="M10 32h30v4H10z"></path></symbol><symbol id="ei-paperclip-icon" viewBox="0 0 50 50"><path d="M13.8 39.6c-1.5 0-3.1-.6-4.2-1.8-2.3-2.3-2.3-6.1 0-8.5l17-17c3.1-3.1 8.2-3.1 11.3 0 3.1 3.1 3.1 8.2 0 11.3L25.1 36.4 23.7 35l12.7-12.7c2.3-2.3 2.3-6.1 0-8.5-2.3-2.3-6.1-2.3-8.5 0l-17 17c-.8.8-1.2 1.8-1.2 2.8 0 1.1.4 2.1 1.2 2.8 1.6 1.6 4.1 1.6 5.7 0l12.7-12.7c.8-.8.8-2 0-2.8-.8-.8-2-.8-2.8 0L18 29.3l-1.4-1.4 8.5-8.5c1.6-1.6 4.1-1.6 5.7 0 1.6 1.6 1.6 4.1 0 5.7L18 37.8c-1.1 1.2-2.7 1.8-4.2 1.8z"></path></symbol><symbol id="ei-pencil-icon" viewBox="0 0 50 50"><path d="M9.6 40.4l2.5-9.9L27 15.6l7.4 7.4-14.9 14.9-9.9 2.5zm4.3-8.9l-1.5 6.1 6.1-1.5L31.6 23 27 18.4 13.9 31.5z"></path><path d="M17.8 37.3c-.6-2.5-2.6-4.5-5.1-5.1l.5-1.9c3.2.8 5.7 3.3 6.5 6.5l-1.9.5z"></path><path d="M29.298 19.287l1.414 1.414-13.01 13.02-1.414-1.41z"></path><path d="M11 39l2.9-.7c-.3-1.1-1.1-1.9-2.2-2.2L11 39z"></path><path d="M35 22.4L27.6 15l3-3 .5.1c3.6.5 6.4 3.3 6.9 6.9l.1.5-3.1 2.9zM30.4 15l4.6 4.6.9-.9c-.5-2.3-2.3-4.1-4.6-4.6l-.9.9z"></path></symbol><symbol id="ei-play-icon" viewBox="0 0 50 50"><path d="M25 42c-9.4 0-17-7.6-17-17S15.6 8 25 8s17 7.6 17 17-7.6 17-17 17zm0-32c-8.3 0-15 6.7-15 15s6.7 15 15 15 15-6.7 15-15-6.7-15-15-15z"></path><path d="M20 33.7V16.3L35 25l-15 8.7zm2-14v10.5l9-5.3-9-5.2z"></path></symbol><symbol id="ei-plus-icon" viewBox="0 0 50 50"><path d="M25 42c-9.4 0-17-7.6-17-17S15.6 8 25 8s17 7.6 17 17-7.6 17-17 17zm0-32c-8.3 0-15 6.7-15 15s6.7 15 15 15 15-6.7 15-15-6.7-15-15-15z"></path><path d="M16 24h18v2H16z"></path><path d="M24 16h2v18h-2z"></path></symbol><symbol id="ei-pointer-icon" viewBox="0 0 50 50"><path d="M33 38H21c-.6 0-1-.4-1-1 0-1.5-.7-2.4-1.8-3.8-.6-.7-1.3-1.6-2-2.7-1.9-3-3.6-6.6-4-7.9-.4-1.3-.1-2.2.3-2.7.4-.6 1.2-.9 2.1-.9 1.2 0 2.4 1 3.5 2.3V11c0-1.7 1.3-3 3-3s3 1.3 3 3v4.2c.3-.1.6-.2 1-.2 1.1 0 2 .6 2.5 1.4.4-.3.9-.4 1.4-.4 1.4 0 2.5.9 2.9 2.2.3-.1.7-.2 1.1-.2 1.7 0 3 1.3 3 3v3c0 2.6-.5 4.7-1 6.7s-1 3.9-1 6.3c0 .6-.4 1-1 1zm-11.1-2H32c.1-2.2.6-4 1-5.8.5-2 1-3.9 1-6.2v-3c0-.6-.4-1-1-1s-1 .4-1 1v1c0 .6-.4 1-1 1s-1-.4-1-1v-3c0-.6-.4-1-1-1s-1 .4-1 1v2c0 .6-.4 1-1 1s-1-.4-1-1v-3c0-.6-.4-1-1-1s-1 .4-1 1v2c0 .6-.4 1-1 1s-1-.4-1-1v-9c0-.6-.4-1-1-1s-1 .4-1 1v15c0 .6-.4 1-1 1s-1-.4-1-1v-.8c-.9-2.3-2.8-4.2-3.5-4.2-.2 0-.4 0-.5.1-.1.1-.1.4 0 .9.3 1.1 1.8 4.3 3.8 7.5.6 1 1.2 1.7 1.8 2.5 1.1 1.2 2.1 2.3 2.3 4z"></path></symbol><symbol id="ei-question-icon" viewBox="0 0 50 50"><path d="M25 42c-9.4 0-17-7.6-17-17S15.6 8 25 8s17 7.6 17 17-7.6 17-17 17zm0-32c-8.3 0-15 6.7-15 15s6.7 15 15 15 15-6.7 15-15-6.7-15-15-15z"></path><path d="M19.8 19.6c.3-.8.6-1.4 1.2-1.9.5-.5 1.1-.9 1.9-1.2s1.6-.4 2.5-.4c.7 0 1.4.1 2 .3.6.2 1.2.5 1.7.9s.9.9 1.1 1.5c.3.6.4 1.3.4 2 0 1-.2 1.8-.6 2.5s-1 1.3-1.6 2l-1.3 1.3c-.3.3-.6.6-.7.9-.2.3-.3.7-.3 1.1-.1.4-.1.7-.1 1.5h-1.6c0-.8 0-1.1.1-1.7.1-.5.3-1 .5-1.5.2-.4.5-.8.9-1.2.4-.4.9-.8 1.4-1.4.5-.5.9-1 1.2-1.5s.5-1.2.5-1.8c0-.5-.1-1-.3-1.4-.2-.4-.5-.8-.8-1.1-.3-.3-.7-.5-1.2-.7-.5-.2-.9-.3-1.4-.3-.7 0-1.3.1-1.8.4-.5.2-1 .6-1.3 1-.3.4-.6.9-.8 1.5s-.4.9-.4 1.6h-1.6c0-.9.1-1.6.4-2.4zM26 32v2h-2v-2h2z"></path></symbol><symbol id="ei-redo-icon" viewBox="0 0 50 50"><path d="M25 38c-7.2 0-13-5.8-13-13s5.8-13 13-13c5.4 0 10.1 3.4 11.9 8.7l-1.9.7c-1.5-4.6-5.4-7.4-10-7.4-6.1 0-11 4.9-11 11s4.9 11 11 11c4.3 0 8.2-2.5 10-6.4l1.8.8C34.7 35 30.1 38 25 38z"></path><path d="M38 22h-8v-2h6v-6h2z"></path></symbol><symbol id="ei-refresh-icon" viewBox="0 0 50 50"><path d="M25 38c-7.2 0-13-5.8-13-13 0-3.2 1.2-6.2 3.3-8.6l1.5 1.3C15 19.7 14 22.3 14 25c0 6.1 4.9 11 11 11 1.6 0 3.1-.3 4.6-1l.8 1.8c-1.7.8-3.5 1.2-5.4 1.2z"></path><path d="M34.7 33.7l-1.5-1.3c1.8-2 2.8-4.6 2.8-7.3 0-6.1-4.9-11-11-11-1.6 0-3.1.3-4.6 1l-.8-1.8c1.7-.8 3.5-1.2 5.4-1.2 7.2 0 13 5.8 13 13 0 3.1-1.2 6.2-3.3 8.6z"></path><path d="M18 24h-2v-6h-6v-2h8z"></path><path d="M40 34h-8v-8h2v6h6z"></path></symbol><symbol id="ei-retweet-icon" viewBox="0 0 50 50"><path d="M38 35h-2V17c0-.6-.4-1-1-1H18v-2h17c1.7 0 3 1.3 3 3v18z"></path><path d="M37 36.5l-6.8-7.8 1.6-1.4 5.2 6.2 5.2-6.2 1.6 1.4z"></path><path d="M32 36H15c-1.7 0-3-1.3-3-3V15h2v18c0 .6.4 1 1 1h17v2z"></path><path d="M18.2 22.7L13 16.5l-5.2 6.2-1.6-1.4 6.8-7.8 6.8 7.8z"></path></symbol><symbol id="ei-sc-facebook-icon" viewBox="0 0 50 50"><path d="M26 20v-3c0-1.3.3-2 2.4-2H31v-5h-4c-5 0-7 3.3-7 7v3h-4v5h4v15h6V25h4.4l.6-5h-5z"></path></symbol><symbol id="ei-sc-github-icon" viewBox="0 0 50 50"><path fill-rule="evenodd" clip-rule="evenodd" d="M25 10c-8.3 0-15 6.7-15 15 0 6.6 4.3 12.2 10.3 14.2.8.1 1-.3 1-.7v-2.6c-4.2.9-5.1-2-5.1-2-.7-1.7-1.7-2.2-1.7-2.2-1.4-.9.1-.9.1-.9 1.5.1 2.3 1.5 2.3 1.5 1.3 2.3 3.5 1.6 4.4 1.2.1-1 .5-1.6 1-2-3.3-.4-6.8-1.7-6.8-7.4 0-1.6.6-3 1.5-4-.2-.4-.7-1.9.1-4 0 0 1.3-.4 4.1 1.5 1.2-.3 2.5-.5 3.8-.5 1.3 0 2.6.2 3.8.5 2.9-1.9 4.1-1.5 4.1-1.5.8 2.1.3 3.6.1 4 1 1 1.5 2.4 1.5 4 0 5.8-3.5 7-6.8 7.4.5.5 1 1.4 1 2.8v4.1c0 .4.3.9 1 .7 6-2 10.2-7.6 10.2-14.2C40 16.7 33.3 10 25 10z"></path></symbol><symbol id="ei-sc-google-plus-icon" viewBox="0 0 50 50"><path d="M18 23v4.8h7.9c-.3 2.1-2.4 6-7.9 6-4.8 0-8.7-4-8.7-8.8s3.9-8.8 8.7-8.8c2.7 0 4.5 1.2 5.6 2.2l3.8-3.7C24.9 12.4 21.8 11 18 11c-7.7 0-14 6.3-14 14s6.3 14 14 14c8.1 0 13.4-5.7 13.4-13.7 0-.9-.1-1.6-.2-2.3H18z"></path><path d="M48 23h-4v-4h-4v4h-4v4h4v4h4v-4h4z"></path></symbol><symbol id="ei-sc-instagram-icon" viewBox="0 0 50 50"><path d="M25 12c-3.53 0-3.973.015-5.36.078-1.384.063-2.329.283-3.156.604a6.372 6.372 0 0 0-2.302 1.5 6.372 6.372 0 0 0-1.5 2.303c-.321.826-.54 1.771-.604 3.155C12.015 21.027 12 21.47 12 25c0 3.53.015 3.973.078 5.36.063 1.384.283 2.329.604 3.155.333.855.777 1.58 1.5 2.303a6.372 6.372 0 0 0 2.302 1.5c.827.32 1.772.54 3.156.604 1.387.063 1.83.078 5.36.078 3.53 0 3.973-.015 5.36-.078 1.384-.063 2.329-.283 3.155-.604a6.371 6.371 0 0 0 2.303-1.5 6.372 6.372 0 0 0 1.5-2.303c.32-.826.54-1.771.604-3.155.063-1.387.078-1.83.078-5.36 0-3.53-.015-3.973-.078-5.36-.063-1.384-.283-2.329-.605-3.155a6.372 6.372 0 0 0-1.499-2.303 6.371 6.371 0 0 0-2.303-1.5c-.826-.32-1.771-.54-3.155-.604C28.973 12.015 28.53 12 25 12m0 2.342c3.471 0 3.882.014 5.253.076 1.267.058 1.956.27 2.414.448.607.236 1.04.517 1.495.972.455.455.736.888.972 1.495.178.458.39 1.146.448 2.414.062 1.37.076 1.782.076 5.253s-.014 3.882-.076 5.253c-.058 1.268-.27 1.956-.448 2.414a4.028 4.028 0 0 1-.972 1.495 4.027 4.027 0 0 1-1.495.972c-.458.178-1.147.39-2.414.448-1.37.062-1.782.076-5.253.076s-3.883-.014-5.253-.076c-1.268-.058-1.956-.27-2.414-.448a4.027 4.027 0 0 1-1.495-.972 4.03 4.03 0 0 1-.972-1.495c-.178-.458-.39-1.146-.448-2.414-.062-1.37-.076-1.782-.076-5.253s.014-3.882.076-5.253c.058-1.268.27-1.956.448-2.414.236-.607.517-1.04.972-1.495a4.028 4.028 0 0 1 1.495-.972c.458-.178 1.146-.39 2.414-.448 1.37-.062 1.782-.076 5.253-.076"></path><path d="M25 18a7 7 0 1 0 0 14 7 7 0 0 0 0-14m0 11.5a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9m8.7-11.4a1.6 1.6 0 1 1-3.2 0 1.6 1.6 0 0 1 3.2 0"></path></symbol><symbol id="ei-sc-linkedin-icon" viewBox="0 0 50 50"><path d="M36.1 12H13.9c-1.1 0-1.9.8-1.9 1.9v22.2c0 1 .9 1.9 1.9 1.9h22.2c1.1 0 1.9-.8 1.9-1.9V13.9c0-1.1-.9-1.9-1.9-1.9zM20 34h-4V22h4v12zm-2-13.6c-1.3 0-2.4-1.1-2.4-2.4 0-1.3 1.1-2.4 2.4-2.4 1.3 0 2.4 1.1 2.4 2.4 0 1.3-1.1 2.4-2.4 2.4zM34 34h-4v-6c0-1.6-.4-3.2-2-3.2s-2 1.6-2 3.2v6h-4V22h4v1.4h.2c.5-1 1.8-1.8 3.3-1.8 3.7 0 4.5 2.4 4.5 5.4v7z"></path></symbol><symbol id="ei-sc-odnoklassniki-icon" viewBox="0 0 50 50"><path d="M25 26c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8zm0-12.2c-2.3 0-4.2 1.9-4.2 4.2s1.9 4.2 4.2 4.2 4.2-1.9 4.2-4.2-1.9-4.2-4.2-4.2z"></path><path d="M33.6 26.8c-.7-.9-1.9-1-2.8-.4 0 0-2.2 1.6-5.8 1.6-3.6 0-5.8-1.6-5.8-1.6-.9-.7-2.1-.5-2.8.4-.7.9-.5 2.1.4 2.8.1.1 2.2 1.7 5.7 2.2l-5.3 5.4c-.8.8-.8 2.1 0 2.8.4.4.9.6 1.4.6.5 0 1-.2 1.4-.6l5-5.1 5 5.1c.4.4.9.6 1.4.6.5 0 1-.2 1.4-.6.8-.8.8-2 0-2.8l-5.3-5.4c3.5-.6 5.6-2.2 5.7-2.2.9-.7 1.1-2 .4-2.8z"></path></symbol><symbol id="ei-sc-pinterest-icon" viewBox="0 0 50 50"><path d="M25 10c-8.3 0-15 6.7-15 15 0 6.4 4 11.8 9.5 14-.1-1.2-.2-3 .1-4.3.3-1.2 1.8-7.5 1.8-7.5s-.4-.9-.4-2.2c0-2.1 1.2-3.6 2.7-3.6 1.3 0 1.9 1 1.9 2.1 0 1.3-.8 3.2-1.2 5-.4 1.5.7 2.7 2.2 2.7 2.7 0 4.7-2.8 4.7-6.9 0-3.6-2.6-6.1-6.3-6.1-4.3 0-6.8 3.2-6.8 6.5 0 1.3.5 2.7 1.1 3.4.1.1.1.3.1.4-.1.5-.4 1.5-.4 1.7-.1.3-.2.3-.5.2-1.9-.9-3-3.6-3-5.8 0-4.7 3.4-9.1 9.9-9.1 5.2 0 9.2 3.7 9.2 8.7 0 5.2-3.3 9.3-7.8 9.3-1.5 0-2.9-.8-3.4-1.7 0 0-.8 2.9-.9 3.6-.3 1.3-1.3 2.9-1.9 3.9 1.4.5 2.9.7 4.4.7 8.3 0 15-6.7 15-15s-6.7-15-15-15z"></path></symbol><symbol id="ei-sc-skype-icon" viewBox="0 0 50 50"><path d="M38 27.3c.1-.8.2-1.6.2-2.4 0-1.8-.3-3.5-1-5.1-.7-1.6-1.6-3-2.8-4.2-1.2-1.2-2.6-2.2-4.2-2.8-1.6-.7-3.4-1-5.1-1-.8 0-1.7.1-2.5.2-1.1-.6-2.4-.9-3.7-.9-2.1 0-4.1.8-5.5 2.3-1.5 1.5-2.3 3.4-2.3 5.5 0 1.3.3 2.6 1 3.8-.1.7-.2 1.5-.2 2.3 0 1.8.3 3.5 1 5.1.7 1.6 1.6 3 2.8 4.2 1.2 1.2 2.6 2.2 4.2 2.8 1.6.7 3.4 1 5.1 1 .8 0 1.6-.1 2.3-.2 1.2.7 2.5 1 3.9 1 2.1 0 4.1-.8 5.5-2.3 1.5-1.5 2.3-3.4 2.3-5.5 0-1.3-.3-2.6-1-3.8zM25.1 33c-4.7 0-6.8-2.3-6.8-4 0-.9.7-1.5 1.6-1.5 2 0 1.5 2.9 5.2 2.9 1.9 0 3-1 3-2.1 0-.6-.3-1.4-1.6-1.7l-4.2-1c-3.4-.8-4-2.7-4-4.4 0-3.6 3.3-4.9 6.5-4.9 2.9 0 6.3 1.6 6.3 3.7 0 .9-.8 1.4-1.7 1.4-1.7 0-1.4-2.4-4.9-2.4-1.7 0-2.7.8-2.7 1.9 0 1.1 1.4 1.5 2.5 1.7l3.1.7c3.4.8 4.2 2.7 4.2 4.6.1 2.9-2.1 5.1-6.5 5.1z"></path></symbol><symbol id="ei-sc-soundcloud-icon" viewBox="0 0 50 50"><path d="M40 24h-.2c-.9-4.6-5-8-9.8-8-3.1 0-5.9 1.4-7.7 3.7-.2.3-.3.6-.3 1.2l-.4 9.1.4 5.5c0 .3.3.5.5.5H40c3.3 0 6-2.7 6-6s-2.7-6-6-6z"></path><path d="M18.9 20c-.3 0-.5.2-.5.5l-.8 9v1l.8 5c0 .3.3.5.6.5h.2c.3 0 .5-.2.6-.5l.8-5c0-.3.1-.7 0-1l-.8-9c0-.3-.3-.5-.5-.5h-.4z"></path><path d="M14.9 21c-.3 0-.5.2-.5.5l-.8 8v1l.8 5c0 .3.3.5.6.5h.2c.3 0 .5-.2.6-.5l.8-5c0-.3.1-.7 0-1l-.8-8c0-.3-.3-.5-.5-.5h-.4z"></path><path d="M11 24c-.3 0-.5.2-.6.5l-.8 5v1l.8 5c0 .3.3.5.6.5s.5-.2.6-.5l.8-5v-1l-.8-5c-.1-.3-.3-.5-.6-.5z"></path><path d="M7 23c-.3 0-.5.2-.6.5l-.9 6v1l.8 5c.2.3.4.5.7.5.3 0 .5-.2.6-.5l.8-5c0-.3.1-.7 0-1l-.9-6c0-.3-.2-.5-.5-.5z"></path><path d="M3.3 26c-.3 0-.5.2-.6.5l-.6 3c-.1.3-.1.7 0 1l.6 4c.1.3.3.5.6.5s.5-.2.6-.5l.6-4v-1l-.6-3c-.1-.3-.3-.5-.6-.5z"></path></symbol><symbol id="ei-sc-telegram-icon" viewBox="0 0 50 50"><path d="M37.1 13L9.4 24c-.9.3-.8 1.6.1 1.9l7 2.2 2.8 8.8c.2.7 1.1.9 1.6.4l4.1-3.8 7.8 5.7c.6.4 1.4.1 1.6-.6l5.4-23.2c.3-1.7-1.2-3-2.7-2.4zM20.9 29.8L20 35l-2-7.2L37.5 15 20.9 29.8z"></path></symbol><symbol id="ei-sc-tumblr-icon" viewBox="0 0 50 50"><path d="M30.9 32.4c-.5.2-1.5.5-2.3.5-2.2.1-2.7-1.6-2.7-2.8v-8.7h5.6v-4.2H26V10h-4.1c-.1 0-.2.1-.2.2-.2 2.2-1.3 6-5.5 7.5v3.6H19v9.1c0 3.1 2.3 7.6 8.4 7.5 2.1 0 4.3-.9 4.8-1.6l-1.3-3.9z"></path></symbol><symbol id="ei-sc-twitter-icon" viewBox="0 0 50 50"><path d="M39.2 16.8c-1.1.5-2.2.8-3.5 1 1.2-.8 2.2-1.9 2.7-3.3-1.2.7-2.5 1.2-3.8 1.5-1.1-1.2-2.7-1.9-4.4-1.9-3.3 0-6.1 2.7-6.1 6.1 0 .5.1.9.2 1.4-5-.2-9.5-2.7-12.5-6.3-.5.7-.8 1.7-.8 2.8 0 2.1 1.1 4 2.7 5-1 0-1.9-.3-2.7-.8v.1c0 2.9 2.1 5.4 4.9 5.9-.5.1-1 .2-1.6.2-.4 0-.8 0-1.1-.1.8 2.4 3 4.2 5.7 4.2-2.1 1.6-4.7 2.6-7.5 2.6-.5 0-1 0-1.4-.1 2.4 1.9 5.6 2.9 9 2.9 11.1 0 17.2-9.2 17.2-17.2V20c1.2-.9 2.2-1.9 3-3.2z"></path></symbol><symbol id="ei-sc-vimeo-icon" viewBox="0 0 50 50"><path d="M38 19.6c-.1 2.7-2 6.4-5.6 11.1-3.8 4.9-7 7.4-9.6 7.4-1.6 0-3-1.5-4.1-4.5-.7-2.7-1.5-5.5-2.2-8.2-.8-3-1.7-4.5-2.7-4.5-.2 0-.9.4-2.2 1.3l-1.3-1.7c1.4-1.2 2.7-2.4 4-3.6 1.8-1.6 3.2-2.4 4.1-2.5 2.2-.2 3.5 1.3 4 4.4.5 3.4.9 5.5 1.1 6.4.6 2.8 1.3 4.2 2.1 4.2.6 0 1.5-.9 2.6-2.8 1.2-1.8 1.8-3.2 1.9-4.2.2-1.6-.5-2.4-1.9-2.4-.7 0-1.3.2-2 .5 1.4-4.5 4-6.6 7.8-6.5 2.8.1 4.2 1.9 4 5.6z"></path></symbol><symbol id="ei-sc-vk-icon" viewBox="0 0 50 50"><path fill-rule="evenodd" clip-rule="evenodd" d="M25.1 35.9h2s.6-.1.9-.4c.3-.3.3-.9.3-.9s0-2.6 1.2-3c1.2-.4 2.8 2.6 4.4 3.7 1.2.9 2.1.7 2.1.7l4.4-.1s2.3-.1 1.2-2c-.1-.1-.6-1.3-3.3-3.8-2.8-2.6-2.4-2.1.9-6.6 2-2.7 2.8-4.3 2.6-5.1-.2-.7-1.7-.5-1.7-.5h-5s-.4-.1-.6.1c-.3.2-.4.5-.4.5s-.8 2.1-1.8 3.9c-2.2 3.7-3.1 3.9-3.4 3.7-.8-.5-.6-2.2-.6-3.3 0-3.6.6-5.1-1.1-5.5-.5-.1-.9-.2-2.3-.2-1.8 0-3.3 0-4.1.4-.6.3-1 .9-.7.9.3 0 1.1.2 1.5.7.4.9.4 2.4.4 2.4s.3 4.3-.7 4.8c-.7.4-1.6-.4-3.6-3.8-1-1.7-1.8-3.7-1.8-3.7s-.1-.4-.4-.6c-.3-.2-.8-.3-.8-.3H10s-.7 0-1 .3c-.2.3 0 .8 0 .8s3.7 8.6 7.9 13c3.9 4.2 8.2 3.9 8.2 3.9z"></path></symbol><symbol id="ei-sc-youtube-icon" viewBox="0 0 50 50"><path d="M39.7 18.6s-.3-2.1-1.2-3c-1.1-1.2-2.4-1.2-3-1.3C31.3 14 25 14 25 14s-6.3 0-10.5.3c-.6.1-1.9.1-3 1.3-.9.9-1.2 3-1.2 3S10 21 10 23.4v2.2c0 2.4.3 4.9.3 4.9s.3 2.1 1.2 3c1.1 1.2 2.6 1.2 3.3 1.3 2.4.1 10.2.2 10.2.2s6.3 0 10.5-.3c.6-.1 1.9-.1 3-1.3.9-.9 1.2-3 1.2-3s.3-2.4.3-4.8v-2.2c0-2.4-.3-4.8-.3-4.8zm-17.8 9.8V20l8.1 4.2-8.1 4.2z"></path></symbol><symbol id="ei-search-icon" viewBox="0 0 50 50"><path d="M23 36c-7.2 0-13-5.8-13-13s5.8-13 13-13 13 5.8 13 13-5.8 13-13 13zm0-24c-6.1 0-11 4.9-11 11s4.9 11 11 11 11-4.9 11-11-4.9-11-11-11z"></path><path d="M32.682 31.267l8.98 8.98-1.414 1.414-8.98-8.98z"></path></symbol><symbol id="ei-share-apple-icon" viewBox="0 0 50 50"><path d="M30.3 13.7L25 8.4l-5.3 5.3-1.4-1.4L25 5.6l6.7 6.7z"></path><path d="M24 7h2v21h-2z"></path><path d="M35 40H15c-1.7 0-3-1.3-3-3V19c0-1.7 1.3-3 3-3h7v2h-7c-.6 0-1 .4-1 1v18c0 .6.4 1 1 1h20c.6 0 1-.4 1-1V19c0-.6-.4-1-1-1h-7v-2h7c1.7 0 3 1.3 3 3v18c0 1.7-1.3 3-3 3z"></path></symbol><symbol id="ei-share-google-icon" viewBox="0 0 50 50"><path d="M15 30c-2.8 0-5-2.2-5-5s2.2-5 5-5 5 2.2 5 5-2.2 5-5 5zm0-8c-1.7 0-3 1.3-3 3s1.3 3 3 3 3-1.3 3-3-1.3-3-3-3z"></path><path d="M35 20c-2.8 0-5-2.2-5-5s2.2-5 5-5 5 2.2 5 5-2.2 5-5 5zm0-8c-1.7 0-3 1.3-3 3s1.3 3 3 3 3-1.3 3-3-1.3-3-3-3z"></path><path d="M35 40c-2.8 0-5-2.2-5-5s2.2-5 5-5 5 2.2 5 5-2.2 5-5 5zm0-8c-1.7 0-3 1.3-3 3s1.3 3 3 3 3-1.3 3-3-1.3-3-3-3z"></path><path d="M19.007 25.885l12.88 6.44-.895 1.788-12.88-6.44z"></path><path d="M30.993 15.885l.894 1.79-12.88 6.438-.894-1.79z"></path></symbol><symbol id="ei-spinner-2-icon" viewBox="0 0 50 50"><circle cx="25" cy="10" r="2"></circle><circle opacity=".3" cx="25" cy="40" r="2"></circle><circle opacity=".3" cx="32.5" cy="12" r="2"></circle><circle opacity=".3" cx="17.5" cy="38" r="2"></circle><circle opacity=".93" cx="17.5" cy="12" r="2"></circle><circle opacity=".3" cx="32.5" cy="38" r="2"></circle><circle opacity=".65" cx="10" cy="25" r="2"></circle><circle opacity=".3" cx="40" cy="25" r="2"></circle><circle opacity=".86" cx="12" cy="17.5" r="2"></circle><circle opacity=".3" cx="38" cy="32.5" r="2"></circle><circle opacity=".44" cx="12" cy="32.5" r="2"></circle><circle opacity=".3" cx="38" cy="17.5" r="2"></circle></symbol><symbol id="ei-spinner-3-icon" viewBox="0 0 50 50"><path d="M41.9 23.9c-.3-6.1-4-11.8-9.5-14.4-6-2.7-13.3-1.6-18.3 2.6-4.8 4-7 10.5-5.6 16.6 1.3 6 6 10.9 11.9 12.5 7.1 2 13.6-1.4 17.6-7.2-3.6 4.8-9.1 8-15.2 6.9-6.1-1.1-11.1-5.7-12.5-11.7-1.5-6.4 1.5-13.1 7.2-16.4 5.9-3.4 14.2-2.1 18.1 3.7 1 1.4 1.7 3.1 2 4.8.3 1.4.2 2.9.4 4.3.2 1.3 1.3 3 2.8 2.1 1.3-.8 1.2-2.5 1.1-3.8 0-.4.1.7 0 0z"></path></symbol><symbol id="ei-spinner-icon" viewBox="0 0 50 50"><path d="M25 18c-.6 0-1-.4-1-1V9c0-.6.4-1 1-1s1 .4 1 1v8c0 .6-.4 1-1 1z"></path><path opacity=".3" d="M25 42c-.6 0-1-.4-1-1v-8c0-.6.4-1 1-1s1 .4 1 1v8c0 .6-.4 1-1 1z"></path><path opacity=".3" d="M29 19c-.2 0-.3 0-.5-.1-.4-.3-.6-.8-.3-1.3l4-6.9c.3-.4.8-.6 1.3-.3.4.3.6.8.3 1.3l-4 6.9c-.2.2-.5.4-.8.4z"></path><path opacity=".3" d="M17 39.8c-.2 0-.3 0-.5-.1-.4-.3-.6-.8-.3-1.3l4-6.9c.3-.4.8-.6 1.3-.3.4.3.6.8.3 1.3l-4 6.9c-.2.2-.5.4-.8.4z"></path><path opacity=".93" d="M21 19c-.3 0-.6-.2-.8-.5l-4-6.9c-.3-.4-.1-1 .3-1.3.4-.3 1-.1 1.3.3l4 6.9c.3.4.1 1-.3 1.3-.2.2-.3.2-.5.2z"></path><path opacity=".3" d="M33 39.8c-.3 0-.6-.2-.8-.5l-4-6.9c-.3-.4-.1-1 .3-1.3.4-.3 1-.1 1.3.3l4 6.9c.3.4.1 1-.3 1.3-.2.1-.3.2-.5.2z"></path><path opacity=".65" d="M17 26H9c-.6 0-1-.4-1-1s.4-1 1-1h8c.6 0 1 .4 1 1s-.4 1-1 1z"></path><path opacity=".3" d="M41 26h-8c-.6 0-1-.4-1-1s.4-1 1-1h8c.6 0 1 .4 1 1s-.4 1-1 1z"></path><path opacity=".86" d="M18.1 21.9c-.2 0-.3 0-.5-.1l-6.9-4c-.4-.3-.6-.8-.3-1.3.3-.4.8-.6 1.3-.3l6.9 4c.4.3.6.8.3 1.3-.2.3-.5.4-.8.4z"></path><path opacity=".3" d="M38.9 33.9c-.2 0-.3 0-.5-.1l-6.9-4c-.4-.3-.6-.8-.3-1.3.3-.4.8-.6 1.3-.3l6.9 4c.4.3.6.8.3 1.3-.2.3-.5.4-.8.4z"></path><path opacity=".44" d="M11.1 33.9c-.3 0-.6-.2-.8-.5-.3-.4-.1-1 .3-1.3l6.9-4c.4-.3 1-.1 1.3.3.3.4.1 1-.3 1.3l-6.9 4c-.1.2-.3.2-.5.2z"></path><path opacity=".3" d="M31.9 21.9c-.3 0-.6-.2-.8-.5-.3-.4-.1-1 .3-1.3l6.9-4c.4-.3 1-.1 1.3.3.3.4.1 1-.3 1.3l-6.9 4c-.2.2-.3.2-.5.2z"></path></symbol><symbol id="ei-star-icon" viewBox="0 0 50 50"><path d="M15.2 40.6c-.2 0-.4-.1-.6-.2-.4-.3-.5-.7-.4-1.1l3.9-12-10.2-7.5c-.4-.3-.5-.7-.4-1.1s.5-.7 1-.7h12.7L25 5.9c.1-.4.5-.7 1-.7s.8.3 1 .7L30.9 18h12.7c.4 0 .8.2 1 .6s0 .9-.4 1.1L34 27.1l3.9 12c.1.4 0 .9-.4 1.1s-.8.3-1.2 0L26 33l-10.2 7.4c-.2.1-.4.2-.6.2zM26 30.7c.2 0 .4.1.6.2l8.3 6.1-3.2-9.8c-.1-.4 0-.9.4-1.1l8.3-6.1H30.1c-.4 0-.8-.3-1-.7L26 9.5l-3.2 9.8c-.1.4-.5.7-1 .7H11.5l8.3 6.1c.4.3.5.7.4 1.1L17.1 37l8.3-6.1c.2-.1.4-.2.6-.2z"></path></symbol><symbol id="ei-tag-icon" viewBox="0 0 50 50"><path d="M22 40.1c-.9 0-1.7-.3-2.3-.9l-8.9-8.9c-1.2-1.2-1.2-3.3 0-4.5l11.9-11.9c1-1 3-1.8 4.5-1.8h7.6c1.8 0 3.2 1.4 3.2 3.2v7.6c0 1.5-.8 3.4-1.8 4.5L24.3 39.2c-.6.6-1.4.9-2.3.9zM27.2 14c-1 0-2.4.6-3 1.3L12.3 27.2c-.5.5-.5 1.2 0 1.7l8.9 8.9c.5.4 1.2.4 1.7 0l11.9-11.9c.7-.7 1.3-2.1 1.3-3v-7.6c0-.7-.5-1.2-1.2-1.2h-7.7z"></path><path d="M30 24c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4zm0-6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></symbol><symbol id="ei-trash-icon" viewBox="0 0 50 50"><path d="M20 18h2v16h-2z"></path><path d="M24 18h2v16h-2z"></path><path d="M28 18h2v16h-2z"></path><path d="M12 12h26v2H12z"></path><path d="M30 12h-2v-1c0-.6-.4-1-1-1h-4c-.6 0-1 .4-1 1v1h-2v-1c0-1.7 1.3-3 3-3h4c1.7 0 3 1.3 3 3v1z"></path><path d="M31 40H19c-1.6 0-3-1.3-3.2-2.9l-1.8-24 2-.2 1.8 24c0 .6.6 1.1 1.2 1.1h12c.6 0 1.1-.5 1.2-1.1l1.8-24 2 .2-1.8 24C34 38.7 32.6 40 31 40z"></path></symbol><symbol id="ei-trophy-icon" viewBox="0 0 50 50"><path d="M28.6 29.4c3-2.3 7.4-5.7 7.4-18.4v-1H14v1c0 12.7 4.5 16.1 7.4 18.4 1.7 1.3 2.6 2 2.6 3.6v3c-1.6.2-3.2.8-3.8 2H18c-1.1 0-2 .9-2 2h18c0-1.1-.9-2-2-2h-2.2c-.6-1.2-2.1-1.8-3.8-2v-3c0-1.6.8-2.3 2.6-3.6zm-3.6.5c-.6-.8-1.5-1.5-2.3-2.1-2.7-2.1-6.4-4.9-6.6-15.8h18c-.2 10.8-3.9 13.7-6.6 15.8-1 .7-1.9 1.3-2.5 2.1z"></path><path d="M18.8 27C18.7 27 8 24.7 8 13v-1h7v2h-5c.6 9.2 9.1 11 9.2 11l-.4 2z"></path><path d="M31.2 27l-.4-2c.4-.1 8.6-1.9 9.2-11h-5v-2h7v1c0 11.7-10.7 14-10.8 14z"></path></symbol><symbol id="ei-undo-icon" viewBox="0 0 50 50"><path d="M25 38c-5.1 0-9.7-3-11.8-7.6l1.8-.8c1.8 3.9 5.7 6.4 10 6.4 6.1 0 11-4.9 11-11s-4.9-11-11-11c-4.6 0-8.5 2.8-10.1 7.3l-1.9-.7c1.9-5.2 6.6-8.6 12-8.6 7.2 0 13 5.8 13 13s-5.8 13-13 13z"></path><path d="M20 22h-8v-8h2v6h6z"></path></symbol><symbol id="ei-unlock-icon" viewBox="0 0 50 50"><path d="M18 23h-2v-4c0-5 4-9 9-9 4.5 0 8.4 3.4 8.9 7.9l-2 .2c-.4-3.5-3.4-6.1-6.9-6.1-3.9 0-7 3.1-7 7v4z"></path><path d="M33 40H17c-1.7 0-3-1.3-3-3V25c0-1.7 1.3-3 3-3h16c1.7 0 3 1.3 3 3v12c0 1.7-1.3 3-3 3zM17 24c-.6 0-1 .4-1 1v12c0 .6.4 1 1 1h16c.6 0 1-.4 1-1V25c0-.6-.4-1-1-1H17z"></path><circle cx="25" cy="28" r="2"></circle><path d="M25.5 28h-1l-1 6h3z"></path></symbol><symbol id="ei-user-icon" viewBox="0 0 50 50"><path d="M25.1 42c-9.4 0-17-7.6-17-17s7.6-17 17-17 17 7.6 17 17-7.7 17-17 17zm0-32c-8.3 0-15 6.7-15 15s6.7 15 15 15 15-6.7 15-15-6.8-15-15-15z"></path><path d="M15.3 37.3l-1.8-.8c.5-1.2 2.1-1.9 3.8-2.7 1.7-.8 3.8-1.7 3.8-2.8v-1.5c-.6-.5-1.6-1.6-1.8-3.2-.5-.5-1.3-1.4-1.3-2.6 0-.7.3-1.3.5-1.7-.2-.8-.4-2.3-.4-3.5 0-3.9 2.7-6.5 7-6.5 1.2 0 2.7.3 3.5 1.2 1.9.4 3.5 2.6 3.5 5.3 0 1.7-.3 3.1-.5 3.8.2.3.4.8.4 1.4 0 1.3-.7 2.2-1.3 2.6-.2 1.6-1.1 2.6-1.7 3.1V31c0 .9 1.8 1.6 3.4 2.2 1.9.7 3.9 1.5 4.6 3.1l-1.9.7c-.3-.8-1.9-1.4-3.4-1.9-2.2-.8-4.7-1.7-4.7-4v-2.6l.5-.3s1.2-.8 1.2-2.4v-.7l.6-.3c.1 0 .6-.3.6-1.1 0-.2-.2-.5-.3-.6l-.4-.4.2-.5s.5-1.6.5-3.6c0-1.9-1.1-3.3-2-3.3h-.6l-.3-.5c0-.4-.7-.8-1.9-.8-3.1 0-5 1.7-5 4.5 0 1.3.5 3.5.5 3.5l.1.5-.4.5c-.1 0-.3.3-.3.7 0 .5.6 1.1.9 1.3l.4.3v.5c0 1.5 1.3 2.3 1.3 2.4l.5.3v2.6c0 2.4-2.6 3.6-5 4.6-1.1.4-2.6 1.1-2.8 1.6z"></path></symbol></svg>
+
+  <div class="clearfix borderbox" id="page"><!-- group -->
+   <div class="clearfix grpelem" id="ppu903"><!-- column -->
+    <div class="clearfix colelem" id="pu903"><!-- group -->
+     <div class="browser_width grpelem" id="u903-bw" style="height: 480px;">
+      <div id="u903"><!-- custom html -->
+       <div class="videoContainer">
+  <video autoplay="" muted="" loop="" poster="assets/vrt_poster.png">
+    <source src="assets/vrt_header_mov_1.mp4" type="video/mp4">
+    Video not supported.
+  </video>
+</div>
+      </div>
+     </div>
+     <div class="clip_frame grpelem" id="u875" data-sizepolicy="fixed" data-pintopage="page_fluidx"><!-- svg -->
+      <img class="svg" id="u876" src="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d1%8b%d0%b5-svg-32x12.svg?crc=3918502158" width="32" height="12" alt="" data-mu-svgfallback="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d1%8b%d0%b5%20svg%2032x12_poster_.png?crc=168572007">
+     </div>
+     <a class="nonblock nontext clearfix grpelem" id="u8066-4" href="index_eng.html" data-sizepolicy="fixed" data-pintopage="page_fluidx"><!-- content --><p>ENG</p></a>
+     <div class="grpelem" id="u8057"><!-- custom html -->
+      <div id="menu">
+  <div class="menu_container"><!-- group -->
+  <!-- CinemaVR -->
+    <div class="top_menu_item grpelem">
+     <a class="top_menu_logo" href="cinemavr_ru.html">Cinema VR</a>
+     <a class="top_menu_poster" href="cinemavr_ru.html"><img class="block" src="/images/cnmvr_cover_151x90.png?crc=4255751367" alt="" width="151" height="90"></a>
+     <a class="top_menu_text" href="cinemavr_ru.html">Самая большая сеть VR-залов в Европе с контентом, основанным на новинках кинопроката. VR-франшиза</a>
+
+    </div>
+<!-- CinemaVR -->
+
+<!-- Polygon -->
+   <div class="top_menu_item grpelem">
+     <a class="top_menu_logo" href="polygonvr_ru.html">Polygon VR</a>
+     <a class="top_menu_poster" href="polygonvr_ru.html"><img class="block" src="/images/plgn_cover_151x90.png?crc=276474037" alt="" width="151" height="90"></a>
+     <a class="top_menu_text" href="polygonvr_ru.html">Уникальное решение на мировом рынке: eSports и VR в одном технологическом решении</a>
+
+    </div>
+<!-- Polygon -->
+
+<!-- EstateVR -->
+    <div class="top_menu_item grpelem">
+     <a class="top_menu_logo" href="estatevr_ru.html">Real Estate VR</a>
+     <a class="top_menu_poster" href="estatevr_ru.html"><img class="block" id="u600_img" src="/images/estatevr_cover_151x90.png?crc=361527219" alt="" width="151" height="90"></a>
+     <a class="top_menu_text" href="estatevr_ru.html">Вирутальный шоу-рум — эффективный инструмент для демонстрации объектов недвижимости</a>
+
+    </div>
+<!-- EstateVR -->
+
+  <!-- Industrial -->
+    <div class="top_menu_item grpelem">
+     <a class="top_menu_logo" href="industrial_ru.html">Индустриальные решения</a>
+     <a class="top_menu_poster" href="industrial_ru.html"><img class="block" src="/images/industrial_cover_151x90.png?crc=4268996310" alt="" width="151" height="90"></a>
+     <a class="top_menu_text" href="industrial_ru.html">Решения виртуальной реальности в промышленности</a>
+
+    </div>
+   <!-- Industrial -->
+
+
+ <!-- Production Studio -->
+    <div class="top_menu_item grpelem">
+     <a class="top_menu_logo" href="production_studio_ru.html">Производство контента</a>
+     <a class="top_menu_poster" href="production_studio_ru.html"><img class="block" src="/images/prod_studio_cover_151x90.png?crc=450634243" alt="" width="151" height="90"></a>
+     <a class="top_menu_text" href="production_studio_ru.html">Разработка VR контента под нужды заказчика</a>
+
+    </div>
+  <!-- Production Studio -->
+
+    
+  <!-- Perfomance -->
+    <div class="top_menu_item grpelem">
+     <a class="top_menu_logo" href="performance_ru.html">Маркетинг VR</a>
+     <a class="top_menu_poster" href="performance_ru.html"><img class="block" src="/images/performance_cover_151x90.png?crc=4215612404" alt="" width="152" height="90"></a>
+     <a class="top_menu_text" href="performance_ru.html">VR и маркетинг. Как сделать так , чтобы о вашем бизнесе заговорили!</a>
+
+    </div>
+  <!-- Perfomance -->
+ </div>
+  <div id="navBar" style="opacity: 1;">
+    <div id="closeAndLang">
+      <div class="icon icon--ei-close icon--m "><svg class="icon__cnt"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ei-close-icon"></use></svg></div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+
+$(document).ready(function() {
+  var opacity = 0
+  var EN_LINK = 'https://google.com/'
+  function toggle() {
+    opacity = opacity === 0 ? 1 : 0;
+    $('#menu').slideToggle()
+    $('#menuScreen').fadeToggle()
+    $('#navBar').animate({ opacity: opacity })
+  }
+  $('#u876').on('click', function() {
+    toggle()
+  })
+  $('#menuScreen').on('click', function() {
+    toggle()
+    console.log('screen')
+  })
+  $('.icon.icon--ei-navicon.icon--m').click(function() {
+    toggle()
+  })
+  $('#navBar').on('click', function(e) {
+    if(e.target.className.split(' ')[0] === 'icon') {
+      toggle()
+    } else if(e.target.id == 'language-in-menu') {
+      window.location.replace(EN_LINK);
+    }
+  })
+})
+
+
+</script>
+     </div>
+     <a class="nonblock nontext MuseLinkActive clip_frame grpelem" id="u873" href="index.html" data-sizepolicy="fixed" data-pintopage="page_fluidx"><!-- svg --><img class="svg" id="u874" src="images/vrt_logo_white.svg?crc=125076678" width="41" height="41" alt="" data-mu-svgfallback="images/vrt_logo_white_poster_.png?crc=4073784414"></a>
+    </div>
+    <div class="h1-black clearfix colelem" id="u101-4" data-sizepolicy="fixed" data-pintopage="page_fixedCenter"><!-- content -->
+     <h1>Технологии виртуальной реальности для бизнеса</h1>
+    </div>
+    <div class="clearfix colelem" id="pu323"><!-- group -->
+     <div class="pointer_cursor shadow clearfix grpelem" id="u323"><!-- column -->
+      <a class="block" href="performance_ru.html"><!-- Block link tag --></a>
+      <a class="nonblock nontext clearfix colelem" id="u658-4" href="performance_ru.html" data-sizepolicy="fixed" data-pintopage="page_fixedCenter"><!-- content --><p>Маркетинг VR</p></a>
+      <a class="nonblock nontext clip_frame colelem" id="u558" href="performance_ru.html" data-sizepolicy="fixed" data-pintopage="page_fixedCenter"><!-- image --><img class="block" id="u558_img" src="images/performance_cover_151x90.png?crc=4215612404" alt="" width="152" height="90"></a>
+      <a class="nonblock nontext clearfix colelem" id="u686-4" href="performance_ru.html" data-sizepolicy="fixed" data-pintopage="page_fixedCenter"><!-- content --><p>VR и маркетинг. Как сделать так , чтобы о вашем бизнесе заговорили!</p></a>
+     </div>
+     <div class="pointer_cursor shadow clearfix grpelem" id="u320"><!-- column -->
+      <a class="block" href="production_studio_ru.html"><!-- Block link tag --></a>
+      <a class="nonblock nontext clearfix colelem" id="u655-4" href="production_studio_ru.html" data-sizepolicy="fixed" data-pintopage="page_fixedCenter"><!-- content --><p>Производство контента</p></a>
+      <a class="nonblock nontext clip_frame colelem" id="u565" href="production_studio_ru.html" data-sizepolicy="fixed" data-pintopage="page_fixedCenter"><!-- image --><img class="block" id="u565_img" src="images/prod_studio_cover_151x90.png?crc=14662293" alt="" width="151" height="90"></a>
+      <a class="nonblock nontext clearfix colelem" id="u683-4" href="production_studio_ru.html" data-sizepolicy="fixed" data-pintopage="page_fixedCenter"><!-- content --><p>Разработка VR контента под нужды заказчика</p></a>
+     </div>
+     <div class="pointer_cursor shadow clearfix grpelem" id="u317"><!-- column -->
+      <a class="block" href="industrial_ru.html"><!-- Block link tag --></a>
+      <a class="nonblock nontext clearfix colelem" id="u649-4" href="industrial_ru.html" data-sizepolicy="fixed" data-pintopage="page_fixedCenter"><!-- content --><p>Индустриальные решения</p></a>
+      <a class="nonblock nontext clip_frame colelem" id="u550" href="industrial_ru.html" data-sizepolicy="fixed" data-pintopage="page_fixedCenter"><!-- image --><img class="block" id="u550_img" src="images/industrial_cover_151x90.png?crc=4268996310" alt="" width="151" height="90"></a>
+      <a class="nonblock nontext clearfix colelem" id="u680-4" href="industrial_ru.html" data-sizepolicy="fixed" data-pintopage="page_fixedCenter"><!-- content --><p>Решения виртуальной реальности в промышленности</p></a>
+     </div>
+     <div class="pointer_cursor shadow clearfix grpelem" id="u314"><!-- column -->
+      <a class="block" href="estatevr_ru.html"><!-- Block link tag --></a>
+      <a class="nonblock nontext clearfix colelem" id="u8026-4" href="industrial_ru.html" data-sizepolicy="fixed" data-pintopage="page_fixedCenter"><!-- content --><p>Real Estate VR</p></a>
+      <a class="nonblock nontext clip_frame colelem" id="u600" href="estatevr_ru.html" data-sizepolicy="fixed" data-pintopage="page_fixedCenter"><!-- image --><img class="block" id="u600_img" src="images/estatevr_cover_151x90.png?crc=361527219" alt="" width="151" height="90"></a>
+      <a class="nonblock nontext clearfix colelem" id="u677-4" href="estatevr_ru.html" data-sizepolicy="fixed" data-pintopage="page_fixedCenter"><!-- content --><p>Вирутальный шоу-рум —&nbsp; эффективный инструмент для демонстрации объектов недвижимости</p></a>
+     </div>
+     <div class="pointer_cursor shadow clearfix grpelem" id="u311"><!-- column -->
+      <a class="block" href="polygonvr_ru.html"><!-- Block link tag --></a>
+      <a class="nonblock nontext clearfix colelem" id="u8029-4" href="industrial_ru.html" data-sizepolicy="fixed" data-pintopage="page_fixedCenter"><!-- content --><p>Polygon VR</p></a>
+      <a class="nonblock nontext clip_frame colelem" id="u610" href="polygonvr_ru.html" data-sizepolicy="fixed" data-pintopage="page_fixedCenter"><!-- image --><img class="block" id="u610_img" src="images/plgn_cover_151x90.png?crc=276474037" alt="" width="151" height="90"></a>
+      <a class="nonblock nontext clearfix colelem" id="u671-4" href="polygonvr_ru.html" data-sizepolicy="fixed" data-pintopage="page_fixedCenter"><!-- content --><p>Уникальное решение на мировом рынке: eSports и VR в одном технологическом решении</p></a>
+     </div>
+     <div class="pointer_cursor shadow clearfix grpelem" id="u308"><!-- column -->
+      <a class="block" href="cinemavr_ru.html"><!-- Block link tag --></a>
+      <a class="nonblock nontext clearfix colelem" id="u8032-4" href="cinemavr_ru.html" data-sizepolicy="fixed" data-pintopage="page_fixedCenter"><!-- content --><p>Cinema VR</p></a>
+      <a class="nonblock nontext clip_frame colelem" id="u590" href="cinemavr_ru.html" data-sizepolicy="fixed" data-pintopage="page_fixedCenter"><!-- image --><img class="block" id="u590_img" src="images/cnmvr_cover_151x90.png?crc=4255751367" alt="" width="151" height="90"></a>
+      <a class="nonblock nontext clearfix colelem" id="u664-4" href="cinemavr_ru.html" data-sizepolicy="fixed" data-pintopage="page_fixedCenter"><!-- content --><p>Самая большая сеть VR-залов в Европе с контентом, основанным на новинках кинопроката. VR-франшиза</p></a>
+     </div>
+     <div class="grpelem" id="u789" data-sizepolicy="fixed" data-pintopage="page_fixedCenter" data-leftadjustmentdoneby="pu323"><!-- simple frame --></div>
+     <div class="grpelem" id="u792" data-sizepolicy="fixed" data-pintopage="page_fixedCenter" data-leftadjustmentdoneby="pu323"><!-- simple frame --></div>
+     <div class="grpelem" id="u795" data-sizepolicy="fixed" data-pintopage="page_fixedCenter" data-leftadjustmentdoneby="pu323"><!-- simple frame --></div>
+     <div class="grpelem" id="u798" data-sizepolicy="fixed" data-pintopage="page_fixedCenter" data-leftadjustmentdoneby="pu323"><!-- simple frame --></div>
+     <div class="grpelem" id="u801" data-sizepolicy="fixed" data-pintopage="page_fixedCenter" data-leftadjustmentdoneby="pu323"><!-- simple frame --></div>
+    </div>
+    <div class="clearfix colelem" id="pu22014"><!-- group -->
+     <div class="clip_frame grpelem" id="u22014" data-sizepolicy="fixed" data-pintopage="page_fixedCenter" data-leftadjustmentdoneby="pu22014"><!-- image -->
+      <img class="block" id="u22014_img" src="images/partners_formula_kino.png?crc=3972914208" alt="" width="127" height="15">
+     </div>
+     <div class="clip_frame grpelem" id="u22012" data-sizepolicy="fixed" data-pintopage="page_fixedCenter" data-leftadjustmentdoneby="pu22014"><!-- image -->
+      <img class="block" id="u22012_img" src="images/partners_cinema_park.png?crc=96920065" alt="" width="91" height="29">
+     </div>
+     <div class="clip_frame grpelem" id="u22010" data-sizepolicy="fixed" data-pintopage="page_fixedCenter" data-leftadjustmentdoneby="pu22014"><!-- image -->
+      <img class="block" id="u22010_img" src="images/partners_kalashikov_koncern.png?crc=530749433" alt="" width="77" height="51">
+     </div>
+     <div class="clip_frame grpelem" id="u22008" data-sizepolicy="fixed" data-pintopage="page_fixedCenter" data-leftadjustmentdoneby="pu22014"><!-- image -->
+      <img class="block" id="u22008_img" src="images/partners_kinosphera.png?crc=4098483624" alt="" width="146" height="49">
+     </div>
+     <div class="clip_frame grpelem" id="u22006" data-sizepolicy="fixed" data-pintopage="page_fixedCenter" data-leftadjustmentdoneby="pu22014"><!-- image -->
+      <img class="block" id="u22006_img" src="images/partners_bosch.png?crc=4045667751" alt="" width="91" height="22">
+     </div>
+     <div class="clip_frame grpelem" id="u22004" data-sizepolicy="fixed" data-pintopage="page_fixedCenter" data-leftadjustmentdoneby="pu22014"><!-- image -->
+      <img class="block" id="u22004_img" src="images/partners_barkli.png?crc=511898314" alt="" width="77" height="23">
+     </div>
+     <div class="clip_frame grpelem" id="u22002" data-sizepolicy="fixed" data-pintopage="page_fixedCenter" data-leftadjustmentdoneby="pu22014"><!-- image -->
+      <img class="block" id="u22002_img" src="images/partners_afi.png?crc=3944186250" alt="" width="120" height="20">
+     </div>
+    </div>
+    <div class="clearfix colelem" id="pu21986"><!-- group -->
+     <div class="clip_frame grpelem" id="u21986" data-sizepolicy="fixed" data-pintopage="page_fixedCenter" data-leftadjustmentdoneby="pu21986"><!-- image -->
+      <img class="block" id="u21986_img" src="images/partners_vive.png?crc=17376596" alt="" width="53" height="53">
+     </div>
+     <div class="clip_frame grpelem" id="u21988" data-sizepolicy="fixed" data-pintopage="page_fixedCenter" data-leftadjustmentdoneby="pu21986"><!-- image -->
+      <img class="block" id="u21988_img" src="images/partners_cppk.png?crc=87739401" alt="" width="56" height="54">
+     </div>
+     <div class="clip_frame grpelem" id="u21990" data-sizepolicy="fixed" data-pintopage="page_fixedCenter" data-leftadjustmentdoneby="pu21986"><!-- image -->
+      <img class="block" id="u21990_img" src="images/partners_tv3.png?crc=130694611" alt="" width="57" height="57">
+     </div>
+     <div class="clip_frame grpelem" id="u21992" data-sizepolicy="fixed" data-pintopage="page_fixedCenter" data-leftadjustmentdoneby="pu21986"><!-- image -->
+      <img class="block" id="u21992_img" src="images/partners_smeshariki.png?crc=34510358" alt="" width="101" height="49">
+     </div>
+     <div class="clip_frame grpelem" id="u21994" data-sizepolicy="fixed" data-pintopage="page_fixedCenter" data-leftadjustmentdoneby="pu21986"><!-- image -->
+      <img class="block" id="u21994_img" src="images/partners_direccia_kino.png?crc=13217791" alt="" width="124" height="50">
+     </div>
+     <div class="clip_frame grpelem" id="u21996" data-sizepolicy="fixed" data-pintopage="page_fixedCenter" data-leftadjustmentdoneby="pu21986"><!-- image -->
+      <img class="block" id="u21996_img" src="images/partners_cp.png?crc=376406031" alt="" width="87" height="62">
+     </div>
+     <div class="clip_frame grpelem" id="u21998" data-sizepolicy="fixed" data-pintopage="page_fixedCenter" data-leftadjustmentdoneby="pu21986"><!-- image -->
+      <img class="block" id="u21998_img" src="images/partners_optitrack.png?crc=135760998" alt="" width="136" height="29">
+     </div>
+     <div class="clip_frame grpelem" id="u22000" data-sizepolicy="fixed" data-pintopage="page_fixedCenter" data-leftadjustmentdoneby="pu21986"><!-- image -->
+      <img class="block" id="u22000_img" src="images/partners_vicon.png?crc=4212535915" alt="" width="109" height="25">
+     </div>
+    </div>
+    <div class="colelem" id="u6139"><!-- custom html -->
+     
+<div id="posts-container">
+  <div class="news_news">
+    <p>Новости</p>
+   </div>
+<div class="news_title">VRTech и Wargaming на Tokyo Game Show 2017</div><iframe class="news_video" src="https://www.youtube.com/embed/7F1D3NFA0V4?modestbranding=1&amp;autohide=1&amp;showinfo=0&amp;controls=0" frameborder="0" style="width: 779px; height: 219px;"></iframe><div class="news_date">21.09.2017</div><div class="news_short_description">VRTech и Wargaming знакомят японский рынок с PolygonVR и CinemaVR на выставке Tokyo Game Show 2017. Наши посетители стенда погрузятся в уникальую. атмосферу VR. CinemaVR, крупнейший европейский развлекательный плеер VR для развлечений, предлагает широкий спектр игр VR разных жанров: посетители могут принять участие в групповых перестрелках в стиле Steampunk в RevolVR или объединиться против полчищ скелетов на экзотическом острове в PiratesVR, управлять флотом и побеждать врагов в битвах. Приготовьтесь войти в будущее с помощью PolygonVR - игры, которая штурмовала Gamescom. Примите участие в кинематографическом приключении в режиме многопользовательской игры прямо на стенде!</div><div class="news_line"></div><div class="news_title">VRTech на выставке Кино Экспо в Санкт-Петербурге</div><img src="http://vrtech.global/assets/st_pete.jpg" class="news_img"><div class="news_date">19.09.2017</div><div class="news_short_description">Крупные кинопроизводители, владельцы кинотеатров и представители компаний из сферы развлечений признали высокую эффективность и масштабность проекта CinemaVR на выставке Кино Экспо, которая проходит с 19 по 22 сентября в Санкт-Петербурге.</div><div class="news_line"></div><div class="news_title">VRTech на Gamescom 2017</div><img src="http://vrtech.global/assets/Gamescom.jpg" class="news_img"><div class="news_date">19.08.2017</div><div class="news_short_description">Группа VRTech в партнерстве с Wargaming представила посетителям выставки Gamescom 2017 уникальный опыт в сфере развлечений. В рамках деловой программы мероприятия, весь период с 22 по 24 августа стенд с нашими проектами PolygonVR и CinemaVR не испытывал недостатка в посетителях. Получив отличные отзывы в медиа и более 5 млн. просмотров глобальной аудитории, Группа VRTech получила живые контакты по партнерству из более чем 23 стран и уже планирует расширять сеть проектов за рубеж в течение ближайших месяцев.</div><div class="news_line"></div><div class="news_title">VRTech и Wargaming объявили о стратегическом партнерстве</div><div class="news_date">10.08.2017</div><div class="news_short_description">Группа VRTech рада сообщить о стратегическом партнерстве с Wargaming. Целью сотрудничества является комбинирование наших решений с экспертизой Wargaming в геймдизайне и пользовательском опыте. Создание совместных инициатив позволит принести по-настоящему увлекательные VR-решения на рынок Европы и не только.</div><div class="news_line"></div><div class="news_title">Форум ИННОПРОМ 2017 </div><div class="news_date">10.07.2017</div><div class="news_short_description">Сегодня в Екатеринбурге стартовал форум ИННОПРОМ. Фонд VRTech представляет технологии виртуальной реальности для обучения сотрудников компаний: промышленные тренажеры, а также тренажеры для машинистов. Наши представители будут готовы с радостью ответить на все вопросы.</div><div class="news_line"></div><div class="news_title">Видео "Москва в VR" на Moscow Urban Forum 2017</div><iframe class="news_video" src="https://www.youtube.com/embed/UqC82JHYZ7E?modestbranding=1&amp;autohide=1&amp;showinfo=0&amp;controls=0" frameborder="0" style="width: 779px; height: 219px;"></iframe><div class="news_date">07.07.2017</div><div class="news_short_description">Посмотрите видео от фонда VRTech, которое было представлено в VR-кинотеатре на Moscow Urban Forum 2017 ! Наше направление Real Estate VR активно развивается, обращайтесь к нам за самыми передовыми решениями виртуальной реальности для рынка недвижимости. </div><div class="news_line"></div><div class="news_title">Интервью исполнительного директора фонда VRTech Юрия Крылова на ЦИПР 2017</div><iframe class="news_video" src="https://www.youtube.com/embed/09F_J3mQfOY?modestbranding=1&amp;autohide=1&amp;showinfo=0&amp;controls=0" frameborder="0" style="width: 779px; height: 219px;"></iframe><div class="news_date">07.06.2017</div><div class="news_short_description">На полях ЦИПР 2017 исполнительный директор VRTech Юрий Крылов дал интервью, в котором рассказал об основных проектах фонда: CinemaVR, Polygon VR, Estate VR и виртуальных тренажерах.  </div><div class="news_line"></div><div class="news_title">Фонд VRTech - один из ключевых институтов VR в России </div><div class="news_date">06.06.2017</div><div class="news_short_description">Согласно исследованию  J’son &amp; Partners Consulting фонд VRTech был назван "одним из ключевых институтов VR в России". 
+</div><div class="news_line"></div><div class="news_title">Директор по IT фонда VRTech Гия Джахая в рамках ЦИПР дал интервью интернет-газете "Реальное время"</div><iframe class="news_video" src="https://www.youtube.com/embed/60gFuAudur0?modestbranding=1&amp;autohide=1&amp;showinfo=0&amp;controls=0" frameborder="0" style="width: 779px; height: 219px;"></iframe><div class="news_date">26.05.2017</div><div class="news_short_description">"Фонд VRTech ориентируется на рынок b2b. Потому что у пользователей банально нету нужных устройств" </div><div class="news_line"></div><div class="news_title">Фонд VRTech подписал соглашение о сотрудничестве с «Национальным Центром Информатизации»</div><img src="http://vrtech.global/assets/soglashenie_25_05_2017.png" class="news_img"><div class="news_date">25.05.2017</div><div class="news_short_description">«Национальный Центр Информатизации» (НЦИ), дочерняя компания ГК «Ростех», реализуя проекты «Умный город», будет использовать технологии виртуальной реальности, принадлежащие российскому венчурному фонду VRTech. Соглашение об этом было подписано 25 мая на площадке конференции «Цифровая  индустрия промышленной революции» (ЦИПР) в Иннополисе.  
+ 
+Стороны договорились о том, что компетенции компаний венчурного фонда VRTech в области виртуальной реальности будут применяться в рамках проектов «Умный город» для моделирования ситуаций, в том числе непредвиденных, а также для обучения персонала различных служб и ведомств</div><div class="news_line"></div><div class="news_title">VRTech вместе в Ростехом выйдет на рынки Азии, Ближнего Востока, Африки, Латинской Америки и СНГ</div><img src="http://vrtech.global/assets/utk_3371_1.png" class="news_img"><div class="news_date">25.05.2017</div><div class="news_short_description">Российский венчурный фонд VRTech и дочерняя компания Ростеха – RITE ("РусАйтиЭкспорт") договорились о включении VR-решений в продуктовый каталог RITE для продвижения на зарубежных рынках. 
+ 
+Соглашение о партнерстве было заключено 25 мая 2017 года на конференции «Цифровая индустрия промышленной России» (ЦИПР) в Иннополисе. Документ подписали  исполнительный директор VRTech Юрий Крылов и генеральный директор RITE Егор Иванов.</div><div class="news_line"></div><div class="news_title">VRTech и Bosch: развиваем виртуальную
+реальность вместе </div><iframe class="news_video" src="https://www.youtube.com/embed/2o-IMZ-6uiU?modestbranding=1&amp;autohide=1&amp;showinfo=0&amp;controls=0" frameborder="0" style="width: 779px; height: 219px;"></iframe><div class="news_date">19.05.2017</div><div class="news_short_description">Фонд VRTech проводит совместную акцию с компанией Bosch. Окунись в мир виртуальной реальности и выиграй новый пылесос ! </div><div class="news_line"></div><div class="news_title">VRTech на Стримфесте 2017 </div><div class="news_date">13.05.2017</div><div class="news_short_description">Проект CinemaVR фонда VRTech 13-го мая принял участие в Стримфест 2017. Это крупнейший в СНГ фестиваль стрим-культуры в партнерстве с Twitch, VK live. Выражаем свою благодарность организаторам и партнерам фестиваля. </div><div class="news_line"></div><div class="news_title">VRTech на выставке Недвижимость 2017 в ЦДХ</div><iframe class="news_video" src="https://www.youtube.com/embed/CtgmKjnevh0?modestbranding=1&amp;autohide=1&amp;showinfo=0&amp;controls=0" frameborder="0" style="width: 779px; height: 219px;"></iframe><div class="news_date">10.05.2017</div><div class="news_short_description">Венчурный фонд VRTech принял участие в выставке Недвижимость 2017. Нами был представлен проект VR Estate. Данное решение позволяет продемонстрировать объект недвижимости потенциальным покупателям. Спасибо организаторам и партнерам выставки. </div><div class="news_line"></div><div class="news_title">VRTech и Серебряный Меркурий </div><img src="http://www.alladvertising.ru/porridge/83/101/h_201f86a889ef866c98a273eb7eff2984" class="news_img"><div class="news_date">25.04.2017</div><div class="news_short_description">Фонд VRTech стал "виртуальным" партнером фестиваля Серебряный Меркурий. В программе дискуссии, лекции, воркшопы от ключевых представителей индустрии маркетинга и рекламы. Среди спикеров Герман Клименко и Марк Завадский. Ждем вас на площадке TESLA.PLACE с 6 по 8-е июня 2017 года. </div><div class="news_line"></div><div class="news_title">Запуск платформы VR Estate от фонда VRTech </div><img src="https://rb.ru/media/upload_tmp/img_2428.jpg" class="news_img"><div class="news_date">16.03.2017</div><div class="news_short_description">Российский фонд VRTech запускает стартап VR Estate – платформу для демонстрации недвижимости потенциальным покупателям в виртуальной реальности. Об этом Rusbase сообщил представитель фонда</div><div class="news_line"></div><div class="news_title">VRTech на Кинорынке </div><img src="https://scontent-arn2-1.xx.fbcdn.net/v/t31.0-8/17097263_1084858498327604_22281183089981027_o.jpg?oh=c4464eff03afe54d0acec766dc889433&amp;oe=599F5E7C" class="news_img"><div class="news_date">09.03.2017</div><div class="news_short_description">Проект CinemaVR фонда VRTech принял участие в Кинорынке 2017, крупнейшем мероприятии кинобизнеса России. Благодарим организаторов и партнеров. </div><div class="news_line"></div><div class="news_title">Презентация PolygonVR от фонда VRTech </div><iframe class="news_video" src="https://www.youtube.com/embed/-FSrX89Opyo?modestbranding=1&amp;autohide=1&amp;showinfo=0&amp;controls=0" frameborder="0" style="width: 779px; height: 219px;"></iframe><div class="news_date">08.10.2017</div><div class="news_short_description">Фонд VRTech представил кибер-VR платформу PolygonVR. Это единственное в своем роде решение в мире, которое сочетает виртуальную реальность и киберспорт !  </div><div class="news_line"></div><div class="news_title">Презентация entertainment направления фонда VRTech</div><img src="https://scontent-arn2-1.xx.fbcdn.net/v/t31.0-8/14939485_570953743112349_8788518349085588740_o.jpg?oh=05176d8b1e69844d8ad703e0f534c30a&amp;oe=59AFC2C5" class="news_img"><div class="news_date">08.10.2016</div><div class="news_short_description">Фонд VRTech провел презентацию своего entertainment направления. Были представлены проекты CinemaVR и PolygonVR.</div><div class="news_line"></div><div class="news_title">VRTech на ПМЭФ 2016 </div><img src="http://mediaguide.ru/p/news_2306.jpg" class="news_img"><div class="news_date">20.06.2016</div><div class="news_short_description">Венчурный фонд VRTech принял участие в работе Петербурского международного экономического форума 2016. Гостям форума были показаны новейшие разработки в области виртуальной реальности - индустриальные VR решения </div><div class="news_line"></div></div>
+<!--
+<div class="news_more_button">
+  <div class="news_more_button_container" id="news_more_button_container">
+    <div class="news_more_button_title">
+      <div data-icon="ei-refresh" data-size="s"></div>
+      <p>Еще новости</p>
+    </div>
+  </div>
+</div>
+-->
+<script>
+$( document ).ready(function() {
+  var ID = '19mrP_RNtWkVFneHrf4HEtREIw_OHqp4adQQ-t-0PDkI'
+  var AP_KEY = 'AIzaSyDpeKCCRpZEqWaT0GL7yFjAMy9yq-RdgDI'
+  var order = 2
+  function get5news() {
+    var link = 'https://sheets.googleapis.com/v4/spreadsheets/'+ID+'/values/A'+order+':Z'+(order+2)+'?key='+AP_KEY
+    $.get( link, function( data ) {
+      data.values.forEach(function(element) {
+        var title = $("<div></div>").text(element[0]).addClass('news_title')
+        var date = $("<div></div>").text(element[1]).addClass('news_date')
+        var image
+        if(element[3]) {
+          image = $('<iframe />', {
+            class: 'news_video',
+            src: element[3]+'?modestbranding=1&autohide=1&showinfo=0&controls=0',
+            frameborder: '0',
+            width: '779',
+            height: '219'
+          });
+        } else if(element[2]) {
+          image = $("<img></img>").attr("src", element[2]).addClass('news_img') 
+        }
+        var shortDescription = "<div class='news_short_description'>"+element[4]+"</div>"
+        var line = $("<div></div>").addClass('news_line')
+        $('#posts-container').append(title, image, date, shortDescription, line)
+      })
+    });
+    order += 3
+  }
+  get5news()
+  
+/*111111*/
+
+var busy = false
+$(window).scroll(function() {
+    if($(window).scrollTop() + $(window).height() > $('#posts-container').height() && !busy) {
+    busy = true;
+    setTimeout(function() {               
+        get5news(); 
+        busy = false;
+    }, 1500);
+                             
+}   
+  })
+/*111111*/
+
+  $('#news_more_button_container').on('click', function() {
+    get5news()
+  })
+});
+</script>
+    </div>
+   </div>
+   <div class="verticalspacer" data-offset-top="2756" data-content-above-spacer="2756" data-content-below-spacer="434" data-sizepolicy="fixed" data-pintopage="page_fixedLeft" style="height: calc((100vh - 3190px) - 7147px);"></div>
+   <div class="clearfix grpelem" id="pu97"><!-- group -->
+    <div class="browser_width grpelem" id="u97-bw" style="height: 420px;">
+     <div id="u97"><!-- group -->
+      <div class="clearfix" id="u97_align_to_page">
+       <div class="clearfix grpelem" id="pu340-4"><!-- column -->
+        <div class="clearfix colelem" id="u340-4" data-sizepolicy="fixed" data-pintopage="page_fixedCenter" data-leftadjustmentdoneby="pu340-4"><!-- content -->
+         <p><span id="u340">VRTech</span></p>
+        </div>
+        <div class="clearfix colelem" id="pu19131"><!-- group -->
+         <a class="nonblock nontext clip_frame grpelem" id="u19131" href="https://www.facebook.com/VRTech.global" data-sizepolicy="fixed" data-pintopage="page_fixedCenter" data-leftadjustmentdoneby="pu19131"><!-- svg --><img class="svg" id="u19127" src="images/vrt_icon_fb.svg?crc=25768147" width="32" height="32" alt="" data-mu-svgfallback="images/vrt_icon_fb_poster_.png?crc=3931264917"></a>
+         <a class="nonblock nontext clip_frame grpelem" id="u19119" href="https://www.youtube.com/channel/UCOs-gxHi-6uWRucaZV_gjaA" data-sizepolicy="fixed" data-pintopage="page_fixedCenter" data-leftadjustmentdoneby="pu19131"><!-- svg --><img class="svg" id="u19115" src="images/vrt_icon_youtube.svg?crc=536082726" width="32" height="32" alt="" data-mu-svgfallback="images/vrt_icon_youtube_poster_.png?crc=286566188"></a>
+         <a class="nonblock nontext clip_frame grpelem" id="u19125" href="https://twitter.com/VRTech1" data-sizepolicy="fixed" data-pintopage="page_fixedCenter" data-leftadjustmentdoneby="pu19131"><!-- svg --><img class="svg" id="u19121" src="images/vrt_icon_twitter.svg?crc=4148141685" width="32" height="32" alt="" data-mu-svgfallback="images/vrt_icon_twitter_poster_.png?crc=286645633"></a>
+        </div>
+        <div class="clearfix colelem" id="u377-4" data-sizepolicy="fixed" data-pintopage="page_fixedCenter" data-leftadjustmentdoneby="pu340-4"><!-- content -->
+         <p>© 2017 VRTech</p>
+        </div>
+       </div>
+       <div class="clearfix grpelem" id="ppu382"><!-- column -->
+        <div class="clearfix colelem" id="pu382"><!-- group -->
+         <div class="clip_frame grpelem" id="u382" data-sizepolicy="fixed" data-pintopage="page_fixedCenter" data-leftadjustmentdoneby="pu382"><!-- svg -->
+          <img class="svg" id="u380" src="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d1%8b%d0%b5-svg-30x38.svg?crc=141156545" width="30" height="38" alt="" data-mu-svgfallback="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d1%8b%d0%b5%20svg%2030x38_poster_.png?crc=375756668">
+         </div>
+         <div class="clearfix grpelem" id="u362-6" data-sizepolicy="fixed" data-pintopage="page_fixedCenter" data-leftadjustmentdoneby="pu382"><!-- content -->
+          <p><span id="u362">6c2 Presnenskaya nab.,</span></p>
+          <p><span id="u362-3">123317, Moscow, Russia.</span></p>
+         </div>
+         <a class="nonblock nontext clip_frame grpelem" id="u392" href="mailto:join@vrtech.global" data-sizepolicy="fixed" data-pintopage="page_fixedCenter" data-leftadjustmentdoneby="pu382"><!-- svg --><img class="svg" id="u390" src="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d1%8b%d0%b5-svg-33x21.svg?crc=113631674" width="33" height="21" alt="" data-mu-svgfallback="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d1%8b%d0%b5%20svg%2033x21_poster_.png?crc=3919397804"></a>
+         <a class="nonblock nontext clearfix grpelem" id="u368-4" href="mailto:join@vrtech.global" data-sizepolicy="fixed" data-pintopage="page_fixedCenter" data-leftadjustmentdoneby="pu382"><!-- content --><p><span id="u368">join@vrtech.global</span></p></a>
+         <a class="nonblock nontext clip_frame grpelem" id="u402" href="callto:+74991103445" data-sizepolicy="fixed" data-pintopage="page_fixedCenter" data-leftadjustmentdoneby="pu382"><!-- svg --><img class="svg" id="u400" src="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d1%8b%d0%b5-svg-23x39.svg?crc=215618025" width="23" height="39" alt="" data-mu-svgfallback="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d1%8b%d0%b5%20svg%2023x39_poster_.png?crc=4015974152"></a>
+         <a class="nonblock nontext clearfix grpelem" id="u365-4" href="tel:+74991103445" data-sizepolicy="fixed" data-pintopage="page_fixedCenter" data-leftadjustmentdoneby="pu382"><!-- content --><p><span id="u365">+7 (499) 110-34-45</span></p></a>
+        </div>
+        <div class="clearfix colelem" id="u353-5" data-sizepolicy="fixed" data-pintopage="page_fixedCenter" data-leftadjustmentdoneby="ppu382"><!-- content -->
+         <p><span id="u353">Мы инвестируем в быстрорастущий VR рынок и проекты, меняющие жизнь вокруг нас. Наша основная задача — познакомить потребителей, бренды и компании с самыми передовыми&nbsp; технологиями виртуальной реальности</span></p>
+         <p>&nbsp;</p>
+        </div>
+        <div class="clearfix colelem" id="pu412"><!-- group -->
+         <div class="clip_frame grpelem" id="u412" data-sizepolicy="fixed" data-pintopage="page_fixedCenter" data-leftadjustmentdoneby="pu412"><!-- svg -->
+          <img class="svg" id="u410" src="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d1%8b%d0%b5-svg-28x16.svg?crc=108501266" width="28" height="16" alt="" data-mu-svgfallback="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d1%8b%d0%b5%20svg%2028x16_poster_.png?crc=4227645410">
+         </div>
+         <div class="clearfix grpelem" id="u371-4" data-sizepolicy="fixed" data-pintopage="page_fixedCenter" data-leftadjustmentdoneby="pu412"><!-- content -->
+          <p>Design Coalla Agency</p>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="browser_width grpelem" id="u356-bw" style="height: 1px;">
+     <div id="u356"><!-- simple frame --></div>
+    </div>
+   </div>
+  </div>
+  <!-- Other scripts -->
+  <script type="text/javascript">
+   // Decide weather to suppress missing file error or not based on preference setting
+var suppressMissingFileError = false
+</script>
+  <script type="text/javascript">
+   window.Muse.assets.check=function(d){if(!window.Muse.assets.checked){window.Muse.assets.checked=!0;var b={},c=function(a,b){if(window.getComputedStyle){var c=window.getComputedStyle(a,null);return c&&c.getPropertyValue(b)||c&&c[b]||""}if(document.documentElement.currentStyle)return(c=a.currentStyle)&&c[b]||a.style&&a.style[b]||"";return""},a=function(a){if(a.match(/^rgb/))return a=a.replace(/\s+/g,"").match(/([\d\,]+)/gi)[0].split(","),(parseInt(a[0])<<16)+(parseInt(a[1])<<8)+parseInt(a[2]);if(a.match(/^\#/))return parseInt(a.substr(1),
+16);return 0},g=function(g){for(var f=document.getElementsByTagName("link"),h=0;h<f.length;h++)if("text/css"==f[h].type){var i=(f[h].href||"").match(/\/?css\/([\w\-]+\.css)\?crc=(\d+)/);if(!i||!i[1]||!i[2])break;b[i[1]]=i[2]}f=document.createElement("div");f.className="version";f.style.cssText="display:none; width:1px; height:1px;";document.getElementsByTagName("body")[0].appendChild(f);for(h=0;h<Muse.assets.required.length;){var i=Muse.assets.required[h],l=i.match(/([\w\-\.]+)\.(\w+)$/),k=l&&l[1]?
+l[1]:null,l=l&&l[2]?l[2]:null;switch(l.toLowerCase()){case "css":k=k.replace(/\W/gi,"_").replace(/^([^a-z])/gi,"_$1");f.className+=" "+k;k=a(c(f,"color"));l=a(c(f,"backgroundColor"));k!=0||l!=0?(Muse.assets.required.splice(h,1),"undefined"!=typeof b[i]&&(k!=b[i]>>>24||l!=(b[i]&16777215))&&Muse.assets.outOfDate.push(i)):h++;f.className="version";break;case "js":h++;break;default:throw Error("Unsupported file type: "+l);}}d?d().jquery!="1.8.3"&&Muse.assets.outOfDate.push("jquery-1.8.3.min.js"):Muse.assets.required.push("jquery-1.8.3.min.js");
+f.parentNode.removeChild(f);if(Muse.assets.outOfDate.length||Muse.assets.required.length)f="Некоторые файлы на сервере могут отсутствовать или быть некорректными. Очистите кэш-память браузера и повторите попытку. Если проблему не удается устранить, свяжитесь с разработчиками сайта.",g&&Muse.assets.outOfDate.length&&(f+="\nOut of date: "+Muse.assets.outOfDate.join(",")),g&&Muse.assets.required.length&&(f+="\nMissing: "+Muse.assets.required.join(",")),suppressMissingFileError?(f+="\nUse SuppressMissingFileError key in AppPrefs.xml to show missing file error pop up.",console.log(f)):alert(f)};location&&location.search&&location.search.match&&location.search.match(/muse_debug/gi)?
+setTimeout(function(){g(!0)},5E3):g()}};
+var muse_init=function(){require.config({baseUrl:""});require(["jquery","museutils","whatinput","jquery.watch"],function(d){var $ = d;$(document).ready(function(){try{
+window.Muse.assets.check($);/* body */
+Muse.Utils.transformMarkupToFixBrowserProblemsPreInit();/* body */
+Muse.Utils.prepHyperlinks(true);/* body */
+Muse.Utils.resizeHeight('.browser_width');/* resize height */
+Muse.Utils.requestAnimationFrame(function() { $('body').addClass('initialized'); });/* mark body as initialized */
+Muse.Utils.makeButtonsVisibleAfterSettingMinWidth();/* body */
+Muse.Utils.fullPage('#page');/* 100% height page */
+Muse.Utils.showWidgetsWhenReady();/* body */
+Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
+}catch(b){if(b&&"function"==typeof b.notify?b.notify():Muse.Assert.fail("Error calling selector function: "+b),false)throw b;}})})};
+
+</script>
+  <!-- RequireJS script -->
+  <script src="scripts/require.js?crc=4157109226" type="text/javascript" async="" data-main="scripts/museconfig.js?crc=4153641093" onload="if (requirejs) requirejs.onError = function(requireType, requireModule) { if (requireType &amp;&amp; requireType.toString &amp;&amp; requireType.toString().indexOf &amp;&amp; 0 <= requireType.toString().indexOf('#scripterror')) window.Muse.assets.check(); }" onerror="window.Muse.assets.check();"></script>
+   
+
+</body><div style="top: -425px; left: 646px;"></div></html>
