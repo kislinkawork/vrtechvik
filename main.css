@@ -8,7 +8,7 @@
 .partners{
 	text-align: justify
 }
-.partners-end{
+.partners-end {
     display: inline-block; width: 100%
 }
 .caption {
@@ -23,7 +23,7 @@
 	margin-left: 50%;
 	left: -77px; 
 }
-.naz-menu-news{
+.naz-menu-news {
 	margin-top: 50px; 
     
 }
@@ -43,12 +43,12 @@
 .clip_frame {
 	overflow: hidden;
 }
-.colelem{
+.colelem {
 	display: inline;
 	float: left;
 	clear: both;
 }
-.h1-black{
+.h1-black {
 	 color: #333333;
 	 font-size: 50px;
 	 margin-left: auto;
@@ -103,7 +103,7 @@
     width: 779px;
     height: 219px;
 }
-.footer
+.footer {}
 
 .news_img {
     object-fit: cover;
